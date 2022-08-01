@@ -1,0 +1,1138 @@
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* IMPORTANT FOR MOBILE VISUALIZATION */
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0
+}
+/* END IMPORTANT FOR MOBILE VISUALIZATION */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* WHOLE WEBSITE STRUCTURE */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courgette&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{margin: 0rem;}
+
+html, body, #menu{margin: 0px;}
+
+#whole_website{
+    display: grid;
+    grid-template-areas:
+    "carousel1 carousel1"
+    "counter counter"
+    "couple couple"
+    "places places"
+    "itinerary itinerary"
+    "carousel_grid carousel_grid"
+    "bank bank"
+    "registration registration"
+    "foot foot";
+}
+#carousel1{grid-area: carousel1;}
+#counter{grid-area: counter;}
+#couple{grid-area: couple;}
+#places{grid-area: places;}
+#itinerary{grid-area: itinerary;}
+#carousel_grid{grid-area: carousel_grid;}
+#bank{grid-area: bank;}
+#registration{grid-area: registration;}
+#foot{grid-area: foot;}
+
+button:visited{text-decoration: none;}
+button::after{text-decoration: none;}
+
+/*TEMPORARY*/
+*{
+    font-family: "Poppins", sans-serif;
+}
+/*TEMPORARY*/
+
+/* END WHOLE WEBSITE STRUCTURE */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* CAROUSEL1 [#carousel1] */
+
+#carousel1{
+    height: 100vh;
+    /*padding: 0.5rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000116;
+    /*background-image: url("images/sky.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+}
+.slider2{
+    /*Actual Carousel Area*/
+    position: relative;
+    background: #000116;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /*border-radius: 1rem;*/
+    /*filter: drop-shadow(0px 0px 20px white);*/
+}
+
+
+
+
+
+.slider2 .slide2{
+    /*Each Image Area Division*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 100% 50%);
+}
+.slider2 .slide2.active2{
+    clip-path: circle(150% at 100% 50%);
+    transition: 1.5s;
+}
+
+
+
+
+.slider2 .slide2.active2 img{
+    transition: 6s;
+    transform: scale(1.3);
+}
+
+.slider2 .slide2.active2 .info2{
+    transition: 6s;
+    transform: scale(0.8);
+}
+
+
+
+
+.slider2 .slide2 img{
+    /*Image Configuration*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center center;
+}
+
+
+/* Text Over Images */
+
+.slider2 .slide2 .info2{
+    /*position: absolute;*/
+    color: #222;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    border-radius: 1rem;
+    margin-top: 70vh;
+}
+.slider2 .slide2 .info2 h2{
+    font-size: 2em;
+    font-weight: 800;
+}
+.slider2 .slide2 .info2 p{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+.slider2 h1{
+    font-family: "Great Vibes", sans-serif;
+    font-size: 3rem;
+}
+
+
+
+
+.navigation2{
+    /*Arrow Button Area*/
+    height: 100vh; /*Same as Slider Height in order to center them Vertically*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+.slider2:hover .navigation2{
+    opacity: 1;
+}
+.prev-btn2, .next-btn2{
+    /*Common Arrow Buttons Configuration*/
+    z-index: 999;
+    font-size: 2rem;
+    color: #222;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+}
+.prev-btn2{
+    /*Previous Button*/
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+.next-btn2{
+    /*Next Button*/
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+.navigation-visibility2{
+    /*Mini-Squares at the Bottom Area*/
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+.navigation-visibility2 .slide-icon2{
+    /*Each Mini-Square Configuration*/
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.3);
+    width: 18px;
+    height: 9px;
+    transform: translateY(-30px);
+    margin: 0 6px;
+    border-radius: 3px;
+    /*box-shadow: 0 5px 25px rgb(1 1 1 / 20%);*/
+    /*backdrop-filter: blur(5px);*/
+    /*box-shadow: 0px 0px 10px 1px black;*/
+}
+  
+.navigation-visibility2 .slide-icon2.active2{
+    /*Mini-Square of the Current Image*/
+    /*background: #4285F4;*/
+    background-color: chartreuse;
+    /*border: 2px solid black;*/
+    filter: drop-shadow(0px 0px 5px black);
+}
+/* END CAROUSEL1 [#carousel1] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+
+
+
+
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* CUENTA REGRESIVA [#counter] */
+#countdown{
+    /*Cuenta Regresiva Grid inside [#counter]*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    margin: 0rem;
+    align-items: center;
+    background-color: #355070;
+    color: black;
+    /* ⚙⚙⚙ */
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "b1 b2 b3 b4 b5";
+}
+#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #355070; text-shadow: 0px 0px 30px black;} /*Area Title*/
+#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #6D597A; text-shadow: 0px 0px 30px white;} /*Area Days*/
+#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #B56576; text-shadow: 0px 0px 30px white;} /*Area Hours*/
+#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #E56B6F; text-shadow: 0px 0px 30px white;} /*Area Minutes*/
+#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #EAAC8B; text-shadow: 0px 0px 30px white;} /*Area Seconds*/
+
+.btitle{font-size: 2rem; color: white;}  /*Cuenta Regresiva Title*/
+.bnumber{font-size: 2rem; padding: 1rem;}  /*Javascript Changing Number*/
+.btext{font-size: 1rem; padding: 1rem;}    /*Category of time (Days/Hours/Minutes/Seconds)*/
+/* END CUENTA REGRESIVA [#counter] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* DATOS DE PAREJA [#couple] */
+#couple{
+    /*Datos de Pareja whole grid*/
+    background-color: #0193a7;
+    padding: 0.5rem;
+    /* ⚙⚙⚙ */
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "novio phrase novia";
+}
+#novio{grid-area: novio;}
+#phrase{grid-area: phrase;}
+#novia{grid-area: novia;}
+
+.cdiv{
+    /*Datos de Pareja Subarea*/
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(256, 256, 256, 0.2);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border-radius: 1rem;
+    color: black;
+}
+.cimage{
+    /*Mustache and Crown images*/
+    width: 50px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+#novio{
+    color: white;
+}
+#phrase{
+    color: #5c5c5c;
+    font-weight: 600;
+}
+#novia{
+    color: white;
+}
+.cdiv h3{
+    color: #5c5c5c;
+}
+/* END DATOS DE PAREJA [#couple] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* PLACES [#religious & #party] inside [#places] */
+#places{
+    /*Whole Religious and Party Grid*/
+    padding: 0rem;
+    /* ⚙⚙⚙ */
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "religious party";
+}
+#religious{grid-area: religious;}
+#party{grid-area: party;}
+
+.dimage{
+    /*Santa Prisca and Jardin images*/
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+#religious{
+    /*Santa Prisca Whole Grid*/
+    background-color: #E56B6F;
+    color: #5c5c5c;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "r1"
+    "r2"
+    "r3";
+}
+#r1{grid-area: r1;}
+#r2{grid-area: r2;}
+#r3{grid-area: r3;}
+#party{
+    /*Jardin San Julian Whole Grid*/
+    background-color: #EAAC8B;
+    color: #5c5c5c;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "p1"
+    "p2"
+    "p3";
+}
+#p1{grid-area: p1;}
+#p2{grid-area: p2;}
+#p3{grid-area: p3;}
+
+.text{
+    /*2 containes of text. 1 for Santa Prisca Text. 1 for Jardin Text*/
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(256, 256, 256, 0.1);
+    border-radius: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.places_p1{
+    /*Where is? question for Santa Prisca and Jardin*/
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.places_p2{
+    /*Place Name for Santa Prisca and Jardin*/
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.map{
+    /*Google Maps iframe*/
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    /*margin-bottom: 1rem;*/
+}
+.dimage:hover{
+    transition: 2s;
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+.dimage{
+    transition: 2s;
+    transform: scale(1);
+    opacity: 1;
+}
+/* END PLACES [#religious & #party] inside [#places] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ITINERARIO [#itinerary] */
+table, tr, td{
+    border-collapse: collapse;
+}
+td{
+    padding: 0.5rem;
+}
+#itinerary{
+    background-image: url("images/d.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0.5rem;
+
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "fhead fhead"
+    "flist fclothing";
+}
+#fhead{grid-area: fhead;}
+#flist{grid-area: flist;}
+#fclothing{grid-area: fclothing;}
+.fdiv{
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(256, 256, 256, 0.2);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border-radius: 1rem;
+}
+#ftable{
+    margin-right: auto;
+    margin-left: auto;
+}
+.right_border{
+    border-right: 3px dashed black;
+    height: 4rem;
+}
+.fimage{
+    width: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.ftime{
+    background-color: rgb(5, 141, 0);
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    text-shadow: 0px 0px 15px black;
+}
+.left{
+    text-align: left;
+}
+.bold{
+    font-weight: bolder;
+}
+/* END ITINERARIO [#itinerary] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* CAROUSEL 2 GRID [#carousel_grid] */
+#carousel_grid{
+    height: 100vh;
+    /*padding: 0.5rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000116;
+    /*background-image: url("images/sky.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+}
+.slider{
+    /*Actual Carousel Area*/
+    position: relative;
+    background: #000116;
+    width: 70%;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 1rem;
+    /*filter: drop-shadow(0px 0px 20px white);*/
+}
+.slider .slide{
+    /*Each Image Area Division*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 100% 50%);
+}
+.slider .slide.active{
+    clip-path: circle(150% at 100% 50%);
+    transition: 3s;
+    transform: scale(1.3);
+}
+.slider .slide img{
+    /*Image Configuration*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center center;
+}
+
+/* Text Over Images */
+/*
+.slider .slide .info{
+    position: absolute;
+    color: #222;
+    background: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+.slider .slide .info h2{
+    font-size: 2em;
+    font-weight: 800;
+}
+.slider .slide .info p{
+    font-size: 1em;
+    font-weight: 400;
+}
+*/
+
+.navigation{
+    /*Arrow Button Area*/
+    height: 80vh; /*Same as Slider Height in order to center them Vertically*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+.slider:hover .navigation{
+    opacity: 1;
+}
+.prev-btn, .next-btn{
+    /*Common Arrow Buttons Configuration*/
+    z-index: 999;
+    font-size: 2rem;
+    color: #222;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+}
+.prev-btn{
+    /*Previous Button*/
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+.next-btn{
+    /*Next Button*/
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+.navigation-visibility{
+    /*Mini-Squares at the Bottom Area*/
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+.navigation-visibility .slide-icon{
+    /*Each Mini-Square Configuration*/
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.3);
+    width: 18px;
+    height: 9px;
+    transform: translateY(-30px);
+    margin: 0 6px;
+    border-radius: 3px;
+    /*box-shadow: 0 5px 25px rgb(1 1 1 / 20%);*/
+    /*backdrop-filter: blur(5px);*/
+    /*box-shadow: 0px 0px 10px 1px black;*/
+}
+  
+.navigation-visibility .slide-icon.active{
+    /*Mini-Square of the Current Image*/
+    /*background: #4285F4;*/
+    background-color: chartreuse;
+    /*border: 2px solid black;*/
+    filter: drop-shadow(0px 0px 5px black);
+}
+/* END CAROUSEL 2 GRID [#carousel_grid] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* DATOS BANCARIOS [#bank] */
+#bank{
+    background-color: #044181;
+    padding: 0.5rem;
+
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+    "hlogo htext bankdata";
+}
+#hlogo{grid-area: hlogo;}
+#htext{grid-area: htext;}
+#bankdata{grid-area: bankdata;}
+
+.hdiv{
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(256, 256, 256, 0.6);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border-radius: 1rem;
+}
+
+.himage{
+    width: 200px;
+}
+.bankimg{
+    width: 100px;
+}
+.htable{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* END DATOS BANCARIOS [#bank] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* CONFIRMACION DE ASISTENCIA [#registration] */
+#registration{
+    background-color: #FF5733;
+    padding: 0.5rem;
+
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+    "icontact_planeadora ihead icontact_novios"
+    "iguala iguala iguala";
+}
+#ihead{grid-area: ihead; z-index: 2;}
+#icontact_planeadora{grid-area: icontact_planeadora;}
+#icontact_novios{grid-area: icontact_novios;}
+#iguala{grid-area: iguala;}
+.idiv{
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(256, 256, 256, 0.2);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border-radius: 1rem;
+}
+
+#customAddToCalendar {
+    background-color: #00C5FF;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    color: black;
+    text-shadow: 0px 0px 10px blue;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+  }
+.fa{
+    padding: 1rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.fa-whatsapp {
+    background: #13990a;
+}
+#s1, #s2{
+    font-size: 2rem;
+}
+/* END CONFIRMACION DE ASISTENCIA [#registration] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* FOOT [#foot] */
+#foot{
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    /*
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+    "hlogo htext bankdata";
+    */
+}
+#love{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#love p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*line-height: 4;*/
+}
+.foot_logo{
+    width: 60px;
+}
+/*
+*{
+    border: 2px solid chartreuse;
+}
+*/
+#author_button{
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FF5733;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border-top: 3px solid #FF5733;
+    border-bottom: 3px solid #FF5733;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+/* END FOOT [#foot] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* REACTIVITY */
+@media (max-width: 1000px){
+    /*For TABLET AND HORIZONTAL SMARTPHONE*/
+    #whole_website{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "carousel1"
+        "counter"
+        "couple"
+        "places"
+        "itinerary"
+        "carousel_grid"
+        "bank"
+        "registration"
+        "foot";
+    }
+    #carousel1{grid-area: carousel1;}
+    #counter{grid-area: counter;}
+    #couple{grid-area: couple;}
+    #religious{grid-area: religious;}
+    #party{grid-area: party;}
+    #itinerary{grid-area: itinerary;}
+    #carousel_grid{grid-area: carousel_grid;}
+    #bank{grid-area: bank;}
+    #registration{grid-area: registration;}
+    #places{grid-area: places;}
+    #map_final{grid-area: map_final;}
+    #foot{grid-area: foot;}
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #countdown{
+        /*Cuenta Regresiva Grid inside [#counter]*/
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "b1 b2 b3 b4 b5";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #couple{
+        /*Datos de Pareja whole grid*/
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "novio novia"
+        "phrase phrase";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #places{
+        /*Whole Religious and Party Grid*/
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "religious"
+        "party";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #itinerary{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "fhead"
+        "flist"
+        "fclothing";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    .slider{
+        /*Actual Carousel Area*/
+        position: relative;
+        background: #000116;
+        width: 95%;
+        height: 80vh;
+        overflow: hidden;
+        border-radius: 1rem;
+        /*filter: drop-shadow(0px 0px 20px white);*/
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #bank{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hlogo" 
+        "htext" 
+        "bankdata";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #registration{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+        "ihead ihead"
+        "icontact_planeadora icontact_novios"
+        "iguala iguala";
+    }
+}
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+@media (max-width: 570px){
+    /*For VERTICAL SMARTPHONE*/
+    #whole_website{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "carousel1"
+        "counter"
+        "couple"
+        "places"
+        "itinerary"
+        "carousel_grid"
+        "bank"
+        "registration"
+        "foot";
+    }
+    #carousel1{grid-area: carousel1;}
+    #counter{grid-area: counter;}
+    #couple{grid-area: couple;}
+    #religious{grid-area: religious;}
+    #party{grid-area: party;}
+    #itinerary{grid-area: itinerary;}
+    #carousel_grid{grid-area: carousel_grid;}
+    #bank{grid-area: bank;}
+    #registration{grid-area: registration;}
+    #places{grid-area: places;}
+    #map_final{grid-area: map_final;}
+    #foot{grid-area: foot;}
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #countdown{
+        /*Cuenta Regresiva Grid inside [#counter]*/
+        padding: 0.5rem;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "b1"
+        "b2"
+        "b3"
+        "b4"
+        "b5";
+    }
+    #b1{grid-area: b1; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #355070; text-shadow: 0px 0px 30px black;} /*Area Title*/
+    #b2{grid-area: b2; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #6D597A; text-shadow: 0px 0px 30px white;} /*Area Days*/
+    #b3{grid-area: b3; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #B56576; text-shadow: 0px 0px 30px white;} /*Area Hours*/
+    #b4{grid-area: b4; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #E56B6F; text-shadow: 0px 0px 30px white;} /*Area Minutes*/
+    #b5{grid-area: b5; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #EAAC8B; text-shadow: 0px 0px 30px white;} /*Area Seconds*/
+
+    .btitle{font-size: 2rem; color: white;}  /*Cuenta Regresiva Title*/
+    .bnumber{font-size: 2rem; padding: 1rem;}  /*Javascript Changing Number*/
+    .btext{font-size: 1rem; padding: 1rem;}    /*Category of time (Days/Hours/Minutes/Seconds)*/
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #couple{
+        /*Datos de Pareja whole grid*/
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "novio"
+        "phrase"
+        "novia";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #places{
+        /*Whole Religious and Party Grid*/
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "religious"
+        "party";
+    }
+    #religious{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #party{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #itinerary{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "fhead"
+        "flist"
+        "fclothing";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    .slider{
+        /*Actual Carousel Area*/
+        position: relative;
+        background: #000116;
+        width: 95%;
+        height: 80vh;
+        overflow: hidden;
+        border-radius: 1rem;
+        /*filter: drop-shadow(0px 0px 20px white);*/
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #bank{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hlogo" 
+        "htext" 
+        "bankdata";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #registration{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "ihead"
+        "icontact_planeadora"
+        "icontact_novios"
+        "iguala";
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #carousel1{grid-area: carousel1; padding-top: 2rem; padding-bottom: 2rem;}
+    /*#counter{grid-area: counter; padding-top: 2rem; padding-bottom: 2rem;}*/
+    #countdown{padding-top: 2rem; padding-bottom: 2rem;}
+    #couple{grid-area: couple; padding-top: 2rem; padding-bottom: 2rem;}
+    /*#places{grid-area: places; padding-top: 2rem; padding-bottom: 2rem;}*/
+    #itinerary{grid-area: itinerary; padding-top: 2rem; padding-bottom: 2rem;}
+    /*#carousel_grid{grid-area: carousel_grid; padding-top: 2rem; padding-bottom: 2rem;}*/
+    #bank{grid-area: bank; padding-top: 2rem; padding-bottom: 2rem;}
+    #registration{grid-area: registration; padding-top: 2rem; padding-bottom: 2rem;}
+    #foot{grid-area: foot;}
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+}
+/* END REACTIVITY */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (max-width: 900px){
+    .slider{
+        width: 100%;
+    }
+  
+    .slider .slide .info{
+        position: relative;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  
+@media (max-width: 500px){
+    .slider .slide .info h2{
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+    
+    .slider .slide .info p{
+        font-size: 0.9em;
+    }
+}
