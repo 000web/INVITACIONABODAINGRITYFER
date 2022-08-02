@@ -39,7 +39,8 @@ html, body, #menu{margin: 0px;}
     "couple couple"
     "places places"
     "itinerary itinerary"
-    "carousel_grid carousel_grid";
+    "carousel_grid carousel_grid"
+    "bank bank";
 }
 #carousel1{grid-area: carousel1;}
 #counter{grid-area: counter;}
@@ -47,6 +48,7 @@ html, body, #menu{margin: 0px;}
 #places{grid-area: places;}
 #itineray{grid-area: itinerary;}
 #carousel_grid{grid-area: carousel_grid;}
+#bank{grid-area: bank;}
 
 button:visited{text-decoration: none;}
 button::after{text-decoration: none;}
@@ -605,6 +607,51 @@ td{
 
 
 
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* DATOS BANCARIOS [#bank] */
+#bank{
+    background-color: #044181;
+    padding: 0.5rem;
+
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+    "hlogo htext bankdata";
+}
+#hlogo{grid-area: hlogo;}
+#htext{grid-area: htext;}
+#bankdata{grid-area: bankdata;}
+
+.hdiv{
+    padding: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(256, 256, 256, 0.6);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border-radius: 1rem;
+}
+
+.himage{
+    width: 200px;
+}
+.bankimg{
+    width: 100px;
+}
+.htable{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* END DATOS BANCARIOS [#bank] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
 
 
 
@@ -655,7 +702,8 @@ td{
         "couple"
         "places"
         "itinerary"
-        "carousel_grid carousel_grid";
+        "carousel_grid carousel_grid"
+        "bank";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
@@ -663,6 +711,7 @@ td{
     #places{grid-area: places;}
     #itinerary{grid-area: itinerary;}
     #carousel_grid{grid-area: carousel_grid;}
+    #bank{grid-area: bank;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel1{
         height: 80vh;
@@ -763,6 +812,16 @@ td{
         height: 80vh; /*Same as Slider Height in order to center them Vertically*/
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #bank{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hlogo htext" 
+        "bankdata bankdata";
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -802,7 +861,8 @@ td{
         "couple"
         "places"
         "itinerary"
-        "carousel_grid";
+        "carousel_grid"
+        "bank";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
@@ -810,6 +870,7 @@ td{
     #places{grid-area: places;}
     #intinerary{grid-area: itinerary;}
     #carousel_grid{grid-area: carousel_grid;}
+    #bank{grid-area: bank;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel1{
         height: 90vh;
@@ -924,6 +985,17 @@ td{
         height: 80vh; /*Same as Slider Height in order to center them Vertically*/
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #bank{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hlogo" 
+        "htext" 
+        "bankdata";
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
