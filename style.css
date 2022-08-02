@@ -64,7 +64,7 @@ button::after{text-decoration: none;}
 
 *{
     /*Default Font-Family*/
-    font-family: "Poppins", sans-serif;
+    font-family: 'Albert Sans', sans-serif;
 }
 /* END WHOLE WEBSITE STRUCTURE */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -254,15 +254,15 @@ button::after{text-decoration: none;}
     grid-template-areas:
     "b1 b2 b3 b4 b5";
 }
-#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #355070; text-shadow: 0px 0px 30px black;} /*Area Title*/
-#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #6D597A; text-shadow: 0px 0px 30px white;} /*Area Days*/
-#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #B56576; text-shadow: 0px 0px 30px white;} /*Area Hours*/
-#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #E56B6F; text-shadow: 0px 0px 30px white;} /*Area Minutes*/
-#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #EAAC8B; text-shadow: 0px 0px 30px white;} /*Area Seconds*/
+#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #355070; text-shadow: 0px 0px 30px black; padding-left: 1rem; padding-right: 1rem;} /*Area Title*/
+#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #6D597A; text-shadow: 0px 0px 30px white;}                                          /*Area Days*/
+#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #B56576; text-shadow: 0px 0px 30px white;}                                          /*Area Hours*/
+#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #E56B6F; text-shadow: 0px 0px 30px white;}                                          /*Area Minutes*/
+#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #EAAC8B; text-shadow: 0px 0px 30px white;}                                          /*Area Seconds*/
 
-.btitle{font-size: 2rem; color: white;}  /*Cuenta Regresiva Title*/
-.bnumber{font-size: 2rem; padding: 1rem;}  /*Javascript Changing Number*/
-.btext{font-size: 1rem; padding: 1rem;}    /*Category of time (Days/Hours/Minutes/Seconds)*/
+.btitle{font-size: 2.5rem; color: white; font-family: 'Albert Sans', sans-serif;}     /*Cuenta Regresiva Title*/
+.bnumber{font-size: 2.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}   /*Javascript Changing Number*/
+.btext{font-size: 1.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}     /*Category of time (Days/Hours/Minutes/Seconds)*/
 /* END CUENTA REGRESIVA [#counter] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -299,14 +299,16 @@ button::after{text-decoration: none;}
 .cdiv{
     /*Datos de Pareja Subarea*/
     padding: 2rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(256, 256, 256, 0.2);
     backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .cimage{
     /*Mustache and Crown images*/
@@ -316,12 +318,23 @@ button::after{text-decoration: none;}
 #novio{
     color: white;
 }
+#novio h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
 #phrase{
     color: #5c5c5c;
     font-weight: 600;
 }
+#couple p{
+    font-size: 1.2rem;
+}
 #novia{
     color: white;
+}
+#novia h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
 }
 .cdiv h3{
     color: #5c5c5c;
@@ -367,8 +380,8 @@ button::after{text-decoration: none;}
 }
 #religious{
     /*Santa Prisca Whole Grid*/
-    background-color: #E56B6F;
-    color: #5c5c5c;
+    background-color: #1e8100;
+    color: white;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
@@ -406,8 +419,8 @@ button::after{text-decoration: none;}
     /*2 containers of text. 1 for Santa Prisca Text. 1 for Jardin Text*/
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     background-color: rgba(256, 256, 256, 0.1);
     border-radius: 1rem;
     display: block;
@@ -421,16 +434,14 @@ button::after{text-decoration: none;}
 .places_p1{
     /*Where is? question for Santa Prisca and Jardin*/
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 800;
 }
 .places_p2{
     /*Place Name for Santa Prisca and Jardin*/
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 .map{
     /*Google Maps iframe*/
@@ -490,17 +501,22 @@ td{
 #flist{grid-area: flist;}
 #fclothing{grid-area: fclothing;}
 
+#fhead h1{
+    font-size: 2.5rem;
+    font-family: 'Albert Sans', sans-serif;
+}
 .fdiv{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(256, 256, 256, 0.2);
     backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #ftable{
     margin-right: auto;
@@ -525,12 +541,26 @@ td{
     padding-left: 1rem;
     border-radius: 0.5rem;
     text-shadow: 0px 0px 15px black;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 1.2rem;
 }
 .left{
     text-align: left;
 }
 .bold{
-    font-weight: bolder;
+    font-weight: 800;
+}
+.activity{
+    font-size: 1.2rem;
+}
+#fclothing h3{
+    font-size: 1.2rem;
+}
+#fclothing p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: justify;
 }
 /* END ITINERARIO [#itinerary] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -672,15 +702,25 @@ td{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(256, 256, 256, 0.6);
     backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+#htext p{
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 600;
+    color: #5c5c5c;
+}
 .himage{
     width: 200px;
 }
@@ -690,6 +730,18 @@ td{
 .htable{
     margin-left: auto;
     margin-right: auto;
+}
+.top_border{
+    border-top: 2px solid #044181;
+}
+.cat{
+    font-weight: 800;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.dat{
+    color: #5c5c5c;
+    font-weight: 800;
 }
 /* END DATOS BANCARIOS [#bank] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -726,15 +778,19 @@ td{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(256, 256, 256, 0.2);
     backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
+.idiv h3{
+    font-size: 1.5rem;
+}
 #customAddToCalendar {
     background-color: #00C5FF;
     font-size: 1rem;
@@ -762,6 +818,14 @@ td{
 }
 #s1, #s2{
     font-size: 2rem;
+}
+
+#iguala p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: justify;
+    font-weight: 700;
+    font-size: 1rem;
 }
 /* END CONFIRMACION DE ASISTENCIA [#registration] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -799,8 +863,8 @@ td{
     align-items: center;
 }
 #love p{
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
 }
 .foot_logo{
     width: 60px;
@@ -1079,15 +1143,9 @@ td{
         "b4"
         "b5";
     }
-    #b1{grid-area: b1; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #355070; text-shadow: 0px 0px 30px black;} /*Area Title*/
-    #b2{grid-area: b2; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #6D597A; text-shadow: 0px 0px 30px white;} /*Area Days*/
-    #b3{grid-area: b3; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #B56576; text-shadow: 0px 0px 30px white;} /*Area Hours*/
-    #b4{grid-area: b4; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #E56B6F; text-shadow: 0px 0px 30px white;} /*Area Minutes*/
-    #b5{grid-area: b5; border-radius: 1rem; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #EAAC8B; text-shadow: 0px 0px 30px white;} /*Area Seconds*/
-
-    .btitle{font-size: 2rem; color: white;}  /*Cuenta Regresiva Title*/
-    .bnumber{font-size: 2rem; padding: 1rem;}  /*Javascript Changing Number*/
-    .btext{font-size: 1rem; padding: 1rem;}    /*Category of time (Days/Hours/Minutes/Seconds)*/
+    #b1, #b2, #b3, #b4, #b5{
+        border-radius: 1rem;
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple{
         /*Datos de Pareja whole grid*/
