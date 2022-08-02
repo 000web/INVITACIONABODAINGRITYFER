@@ -451,8 +451,11 @@ td{
 #fhead{grid-area: fhead;}
 #flist{grid-area: flist;}
 #fclothing{grid-area: fclothing;}
+
 .fdiv{
     padding: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -464,6 +467,9 @@ td{
 #ftable{
     margin-right: auto;
     margin-left: auto;
+}
+.adjust_td{
+    min-width: 100px;
 }
 .right_border{
     border-right: 3px dashed black;
@@ -553,12 +559,14 @@ td{
         "carousel1"
         "counter"
         "couple"
-        "places";
+        "places"
+        "itinerary";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
     #places{grid-area: places;}
+    #itinerary{grid-area: itinerary;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel1{
         height: 80vh;
@@ -677,12 +685,14 @@ td{
         "carousel1"
         "counter"
         "couple"
-        "places";
+        "places"
+        "itinerary";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
     #places{grid-area: places;}
+    #intinerary{grid-area: itinerary;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel1{
         height: 90vh;
