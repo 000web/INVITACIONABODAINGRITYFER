@@ -745,6 +745,8 @@ td{
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel_grid{
         height: 90vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     .slider{
         /*Actual Carousel Area*/
@@ -904,6 +906,8 @@ td{
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel_grid{
         height: 90vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     .slider{
         /*Actual Carousel Area*/
