@@ -380,7 +380,8 @@ button::after{text-decoration: none;}
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    width: 100%;
+    margin-right: 0rem;
+    margin-left: 0rem;
 }
 .places_p1{
     /*Where is? question for Santa Prisca and Jardin*/
