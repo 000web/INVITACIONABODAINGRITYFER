@@ -117,14 +117,14 @@ var repeater2 = () => {
 repeater2();
 
 //stop the image slider autoplay on mouseover
-slider2.addEventListener("mouseover", () => {
-	clearInterval(playSlider2);
-});
+//slider2.addEventListener("mouseover", () => {
+//	clearInterval(playSlider2);
+//});
 
 //start the image slider autoplay again on mouseout
-slider2.addEventListener("mouseout", () => {
-	repeater2();
-});
+//slider2.addEventListener("mouseout", () => {
+//	repeater2();
+//});
 
 //
 //
