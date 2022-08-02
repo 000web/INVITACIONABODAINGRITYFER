@@ -469,7 +469,31 @@ button::after{text-decoration: none;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
     #places{grid-area: places;}
-
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #carousel1{
+        height: 80vh;
+    }
+    .slider2{
+        /*Actual Carousel Area*/
+        height: 80vh;
+    }
+    .slider2 .slide2{
+        /*Each Image Area Division*/
+        height: 80vh;
+    }
+    .slider2 .slide2 img{
+        /*Normal Image Configuration*/
+        height: 80vh;
+    }
+    /* Text Over Images */
+    .slider2 .slide2 .info2{
+        /*Container of Wedding's Header Text*/
+        margin-top: 46vh;
+    }
+    .navigation2{
+        /*Arrow Button Area*/
+        height: 80vh; /*Same as Slider Height in order to center them Vertically*/
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
@@ -541,7 +565,31 @@ button::after{text-decoration: none;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
     #places{grid-area: places;}
-
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #carousel1{
+        height: 90vh;
+    }
+    .slider2{
+        /*Actual Carousel Area*/
+        height: 90vh;
+    }
+    .slider2 .slide2{
+        /*Each Image Area Division*/
+        height: 90vh;
+    }
+    .slider2 .slide2 img{
+        /*Normal Image Configuration*/
+        height: 90vh;
+    }
+    /* Text Over Images */
+    .slider2 .slide2 .info2{
+        /*Container of Wedding's Header Text*/
+        margin-top: 57vh;
+    }
+    .navigation2{
+        /*Arrow Button Area*/
+        height: 90vh; /*Same as Slider Height in order to center them Vertically*/
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
