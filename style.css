@@ -60,7 +60,7 @@ button::after{text-decoration: none;}
 #carousel1{
     background-color: #000116;
     
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -72,7 +72,7 @@ button::after{text-decoration: none;}
     /*Actual Carousel Area*/
     position: relative;
     background: #000116;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -80,7 +80,7 @@ button::after{text-decoration: none;}
     /*Each Image Area Division*/
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     clip-path: circle(0% at 100% 50%);
 }
 .slider2 .slide2.active2{
@@ -105,7 +105,7 @@ button::after{text-decoration: none;}
     /*Normal Image Configuration*/
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
     background-position: center center;
 }
@@ -123,8 +123,8 @@ button::after{text-decoration: none;}
     margin-right: auto;
     width: 350px;
     border-radius: 1rem;
-    margin-top: 68vh;
-    border: 3px solid crimson;
+    margin-top: 47vh;
+    border: 3px solid chartreuse;
 }
 
 .slider2 .slide2 .info2 h2{
@@ -141,7 +141,7 @@ button::after{text-decoration: none;}
 
 .navigation2{
     /*Arrow Button Area*/
-    height: 100vh; /*Same as Slider Height in order to center them Vertically*/
+    height: 80vh; /*Same as Slider Height in order to center them Vertically*/
     display: flex;
     align-items: center;
     justify-content: space-between;

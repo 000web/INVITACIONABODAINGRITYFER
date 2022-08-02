@@ -111,7 +111,7 @@ var repeater2 = () => {
 		
 		slides2[slideNumber2].classList.add("active2");
 		slideIcons2[slideNumber2].classList.add("active2");
-	}, 5000);
+	}, 6000);
 }
 
 repeater2();
@@ -130,6 +130,22 @@ slider2.addEventListener("mouseout", () => {
 //
 //
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
