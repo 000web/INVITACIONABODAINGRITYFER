@@ -87,7 +87,7 @@ button::after{text-decoration: none;}
     height: 100vh;
     margin-left: 0rem;
     margin-right: 0rem;
-    /*border: 2px solid chartreuse;*/
+    border: 2px solid chartreuse;
 }
 
 
