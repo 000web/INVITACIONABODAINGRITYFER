@@ -354,6 +354,7 @@ button::after{text-decoration: none;}
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
+
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
@@ -369,6 +370,8 @@ button::after{text-decoration: none;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple{
         /*Datos de Pareja whole grid*/
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr;
@@ -404,6 +407,7 @@ button::after{text-decoration: none;}
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
+
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
@@ -432,6 +436,8 @@ button::after{text-decoration: none;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple{
         /*Datos de Pareja whole grid*/
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr;
