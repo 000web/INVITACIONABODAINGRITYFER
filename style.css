@@ -299,6 +299,8 @@ button::after{text-decoration: none;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         display: grid;
         grid-gap: 0rem;
         grid-template-rows: 1fr;
