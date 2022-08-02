@@ -31,22 +31,22 @@ html, body, #menu{margin: 0px;}
 #whole_website{
     display: grid;
     grid-template-areas:
-    "carousel1 carousel1"
+    /*"carousel1 carousel1"*/
     "counter counter"
     "couple couple"
     "places places"
     "itinerary itinerary"
-    "carousel_grid carousel_grid"
+    /*"carousel_grid carousel_grid"*/
     "bank bank"
     "registration registration"
     "foot foot";
 }
-#carousel1{grid-area: carousel1;}
+/*#carousel1{grid-area: carousel1;}*/
 #counter{grid-area: counter;}
 #couple{grid-area: couple;}
 #places{grid-area: places;}
 #itinerary{grid-area: itinerary;}
-#carousel_grid{grid-area: carousel_grid;}
+/*#carousel_grid{grid-area: carousel_grid;}*/
 #bank{grid-area: bank;}
 #registration{grid-area: registration;}
 #foot{grid-area: foot;}
@@ -68,6 +68,7 @@ button::after{text-decoration: none;}
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* CAROUSEL1 [#carousel1] */
+/*
 #carousel1{
     height: 100vh;
     background-color: #000116;
@@ -81,6 +82,7 @@ button::after{text-decoration: none;}
 
 .slider2{
     /*Actual Carousel Area*/
+    /*
     position: relative;
     background: #000116;
     overflow: hidden;
@@ -96,10 +98,10 @@ button::after{text-decoration: none;}
 
 .slider2 .slide2{
     /*Each Image Area Division*/
+    /*
     position: absolute;
     height: 100vh;
     clip-path: circle(0% at 100% 50%);
-    width: 100vw;
 }
 .slider2 .slide2.active2{
     clip-path: circle(150% at 100% 50%);
@@ -124,8 +126,10 @@ button::after{text-decoration: none;}
 
 .slider2 .slide2 img{
     /*Image Configuration*/
+    /*
     position: absolute;
-    width: 100%;
+    /*width: 100%;*/
+    /*
     height: 100%;
     object-fit: cover;
     background-position: center center;
@@ -133,9 +137,10 @@ button::after{text-decoration: none;}
 
 
 /* Text Over Images */
-
+/*
 .slider2 .slide2 .info2{
     /*position: absolute;*/
+    /*
     color: #222;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
@@ -168,7 +173,9 @@ button::after{text-decoration: none;}
 
 .navigation2{
     /*Arrow Button Area*/
+    /*
     height: 100vh; /*Same as Slider Height in order to center them Vertically*/
+    /*
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,6 +187,7 @@ button::after{text-decoration: none;}
 }
 .prev-btn2, .next-btn2{
     /*Common Arrow Buttons Configuration*/
+    /*
     z-index: 999;
     font-size: 2rem;
     color: #222;
@@ -189,22 +197,26 @@ button::after{text-decoration: none;}
 }
 .prev-btn2{
     /*Previous Button*/
+    /*
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
 }
 .next-btn2{
     /*Next Button*/
+    /*
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
 }
 .navigation-visibility2{
     /*Mini-Squares at the Bottom Area*/
+    /*
     z-index: 999;
     display: flex;
     justify-content: center;
 }
 .navigation-visibility2 .slide-icon2{
     /*Each Mini-Square Configuration*/
+    /*
     z-index: 999;
     background: rgba(255, 255, 255, 0.3);
     width: 18px;
@@ -215,13 +227,16 @@ button::after{text-decoration: none;}
     /*box-shadow: 0 5px 25px rgb(1 1 1 / 20%);*/
     /*backdrop-filter: blur(5px);*/
     /*box-shadow: 0px 0px 10px 1px black;*/
+    /*
 }
   
 .navigation-visibility2 .slide-icon2.active2{
     /*Mini-Square of the Current Image*/
     /*background: #4285F4;*/
+    /*
     background-color: chartreuse;
     /*border: 2px solid black;*/
+    /*
     filter: drop-shadow(0px 0px 5px black);
 }
 /* END CAROUSEL1 [#carousel1] */
@@ -513,9 +528,11 @@ td{
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* CAROUSEL 2 GRID [#carousel_grid] */
+/*
 #carousel_grid{
     height: 100vh;
     /*padding: 0.5rem;*/
+    /*
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,22 +541,29 @@ td{
     /*background-repeat: no-repeat;*/
     /*background-size: cover;*/
     /*background-position: center center;*/
+    /*
 }
 .slider{
     /*Actual Carousel Area*/
+    /*
     position: relative;
     background: #000116;
-    width: 70%;
+    width: 70vw;
     height: 80vh;
     overflow: hidden;
     border-radius: 1rem;
     /*filter: drop-shadow(0px 0px 20px white);*/
+    /*
 }
 .slider .slide{
     /*Each Image Area Division*/
+    /*
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70vw;
+    height: 80vw;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*
     clip-path: circle(0% at 100% 50%);
 }
 .slider .slide.active{
@@ -549,9 +573,13 @@ td{
 }
 .slider .slide img{
     /*Image Configuration*/
+    /*
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*
+    width: 70vw;
+    height: 80vw;
     object-fit: cover;
     background-position: center center;
 }
@@ -578,10 +606,12 @@ td{
     font-weight: 400;
 }
 */
-
+/*
 .navigation{
     /*Arrow Button Area*/
+    /*
     height: 80vh; /*Same as Slider Height in order to center them Vertically*/
+    /*
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -593,6 +623,7 @@ td{
 }
 .prev-btn, .next-btn{
     /*Common Arrow Buttons Configuration*/
+    /*
     z-index: 999;
     font-size: 2rem;
     color: #222;
@@ -602,22 +633,26 @@ td{
 }
 .prev-btn{
     /*Previous Button*/
+    /*
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
 }
 .next-btn{
     /*Next Button*/
+    /*
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
 }
 .navigation-visibility{
     /*Mini-Squares at the Bottom Area*/
+    /*
     z-index: 999;
     display: flex;
     justify-content: center;
 }
 .navigation-visibility .slide-icon{
     /*Each Mini-Square Configuration*/
+    /*
     z-index: 999;
     background: rgba(255, 255, 255, 0.3);
     width: 18px;
@@ -628,13 +663,16 @@ td{
     /*box-shadow: 0 5px 25px rgb(1 1 1 / 20%);*/
     /*backdrop-filter: blur(5px);*/
     /*box-shadow: 0px 0px 10px 1px black;*/
+    /*
 }
   
 .navigation-visibility .slide-icon.active{
     /*Mini-Square of the Current Image*/
     /*background: #4285F4;*/
+    /*
     background-color: chartreuse;
     /*border: 2px solid black;*/
+    /*
     filter: drop-shadow(0px 0px 5px black);
 }
 /* END CAROUSEL 2 GRID [#carousel_grid] */
