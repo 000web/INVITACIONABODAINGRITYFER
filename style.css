@@ -35,10 +35,12 @@ html, body, #menu{margin: 0px;}
     grid-template-columns: 1fr;
     grid-template-areas:
     "carousel1 carousel1"
-    "counter counter";
+    "counter counter"
+    "couple couple";
 }
 #carousel1{grid-area: carousel1;}
 #counter{grid-area: counter;}
+#couple{grid-area: couple;}
 
 button:visited{text-decoration: none;}
 button::after{text-decoration: none;}
@@ -242,6 +244,60 @@ button::after{text-decoration: none;}
 
 
 
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* DATOS DE PAREJA [#couple] */
+#couple{
+    /*Datos de Pareja whole grid*/
+    background-color: #0193a7;
+    padding: 0.5rem;
+    /* ⚙⚙⚙ */
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "novio phrase novia";
+}
+#novio{grid-area: novio;}
+#phrase{grid-area: phrase;}
+#novia{grid-area: novia;}
+
+.cdiv{
+    /*Datos de Pareja Subarea*/
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(256, 256, 256, 0.2);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border-radius: 1rem;
+    color: black;
+}
+.cimage{
+    /*Mustache and Crown images*/
+    width: 50px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+#novio{
+    color: white;
+}
+#phrase{
+    color: #5c5c5c;
+    font-weight: 600;
+}
+#novia{
+    color: white;
+}
+.cdiv h3{
+    color: #5c5c5c;
+}
+/* END DATOS DE PAREJA [#couple] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 
 
 
@@ -292,10 +348,12 @@ button::after{text-decoration: none;}
         grid-template-columns: 1fr;
         grid-template-areas:
         "carousel1"
-        "counter";
+        "counter"
+        "couple";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
+    #couple{grid-area: couple;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
@@ -309,6 +367,15 @@ button::after{text-decoration: none;}
         "b1 b2 b3 b4 b5";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #couple{
+        /*Datos de Pareja whole grid*/
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "novio novia"
+        "phrase phrase";
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -331,10 +398,12 @@ button::after{text-decoration: none;}
         grid-template-columns: 1fr;
         grid-template-areas:
         "carousel1"
-        "counter";
+        "counter"
+        "couple";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
+    #couple{grid-area: couple;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
@@ -361,6 +430,16 @@ button::after{text-decoration: none;}
     .bnumber{font-size: 2rem; padding: 1rem;}  /*Javascript Changing Number*/
     .btext{font-size: 1rem; padding: 1rem;}    /*Category of time (Days/Hours/Minutes/Seconds)*/
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #couple{
+        /*Datos de Pareja whole grid*/
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "novio"
+        "phrase"
+        "novia";
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
