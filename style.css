@@ -30,6 +30,7 @@ html, body, #menu{margin: 0px;}
 
 #whole_website{
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas:
     /*"carousel1 carousel1"*/
     "counter counter"
@@ -261,7 +262,8 @@ button::after{text-decoration: none;}
     /*height: 100%;*/
     margin: 0rem;
     align-items: center;
-    background-color: #355070;
+    /*background-color: #355070;*/
+    background-color: chartreuse;
     color: black;
     /* ⚙⚙⚙ */
     display: grid;
