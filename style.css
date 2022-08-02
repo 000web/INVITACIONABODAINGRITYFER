@@ -36,11 +36,13 @@ html, body, #menu{margin: 0px;}
     grid-template-areas:
     "carousel1 carousel1"
     "counter counter"
-    "couple couple";
+    "couple couple"
+    "places places";
 }
 #carousel1{grid-area: carousel1;}
 #counter{grid-area: counter;}
 #couple{grid-area: couple;}
+#places{grid-area: places;}
 
 button:visited{text-decoration: none;}
 button::after{text-decoration: none;}
@@ -302,6 +304,118 @@ button::after{text-decoration: none;}
 
 
 
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* PLACES [#religious & #party] inside [#places] */
+#places{
+    /*Whole Religious and Party Grid*/
+    padding: 0rem;
+    /* ⚙⚙⚙ */
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "religious party";
+}
+#religious{grid-area: religious;}
+#party{grid-area: party;}
+
+.dimage{
+    /*Santa Prisca and Jardin images*/
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+#religious{
+    /*Santa Prisca Whole Grid*/
+    background-color: #E56B6F;
+    color: #5c5c5c;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "r1"
+    "r2"
+    "r3";
+}
+#r1{grid-area: r1;}
+#r2{grid-area: r2;}
+#r3{grid-area: r3;}
+#party{
+    /*Jardin San Julian Whole Grid*/
+    background-color: #EAAC8B;
+    color: #5c5c5c;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "p1"
+    "p2"
+    "p3";
+}
+#p1{grid-area: p1;}
+#p2{grid-area: p2;}
+#p3{grid-area: p3;}
+
+.text{
+    /*2 containers of text. 1 for Santa Prisca Text. 1 for Jardin Text*/
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(256, 256, 256, 0.1);
+    border-radius: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.places_p1{
+    /*Where is? question for Santa Prisca and Jardin*/
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.places_p2{
+    /*Place Name for Santa Prisca and Jardin*/
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.map{
+    /*Google Maps iframe*/
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    /*margin-bottom: 1rem;*/
+}
+.dimage:hover{
+    transition: 2s;
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+.dimage{
+    transition: 2s;
+    transform: scale(1);
+    opacity: 1;
+}
+/* END PLACES [#religious & #party] inside [#places] */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
 
 
 
@@ -349,11 +463,13 @@ button::after{text-decoration: none;}
         grid-template-areas:
         "carousel1"
         "counter"
-        "couple";
+        "couple"
+        "places";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
+    #places{grid-area: places;}
 
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
@@ -380,6 +496,23 @@ button::after{text-decoration: none;}
         "phrase phrase";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #places{
+        /*Whole Religious and Party Grid*/
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "religious"
+        "party";
+    }
+    #religious{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #party{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -402,11 +535,13 @@ button::after{text-decoration: none;}
         grid-template-areas:
         "carousel1"
         "counter"
-        "couple";
+        "couple"
+        "places";
     }
     #carousel1{grid-area: carousel1;}
     #counter{grid-area: counter;}
     #couple{grid-area: couple;}
+    #places{grid-area: places;}
 
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #countdown{
@@ -447,6 +582,23 @@ button::after{text-decoration: none;}
         "novia";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #places{
+        /*Whole Religious and Party Grid*/
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "religious"
+        "party";
+    }
+    #religious{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #party{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
