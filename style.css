@@ -150,7 +150,7 @@ button::after{text-decoration: none;}
     width: 350px;
     border-radius: 1rem;
     margin-top: 57vh;
-    border: 3px solid chartreuse;
+    border: 3px solid #D3AC79;
 }
 
 .slider2 .slide2 .info2 h2{
@@ -221,7 +221,7 @@ button::after{text-decoration: none;}
   
 .navigation-visibility2 .slide-icon2.active2{
     /*Mini-Square of the Current Image*/
-    background-color: chartreuse;
+    background-color: #D3AC79;
     filter: drop-shadow(0px 0px 5px black);
 }
 /* END CAROUSEL1 [#carousel1] */
@@ -243,9 +243,11 @@ button::after{text-decoration: none;}
 /* CUENTA REGRESIVA [#counter] */
 #countdown{
     /*Cuenta Regresiva Grid inside [#counter]*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin: 0rem;
     align-items: center;
-    background-color: #355070;
+    background-color: white;
     color: black;
     /* ⚙⚙⚙ */
     display: grid;
@@ -254,15 +256,20 @@ button::after{text-decoration: none;}
     grid-template-areas:
     "b1 b2 b3 b4 b5";
 }
-#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #355070; text-shadow: 0px 0px 30px black; padding-left: 1rem; padding-right: 1rem;} /*Area Title*/
-#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #6D597A; text-shadow: 0px 0px 30px white;}                                          /*Area Days*/
-#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #B56576; text-shadow: 0px 0px 30px white;}                                          /*Area Hours*/
-#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #E56B6F; text-shadow: 0px 0px 30px white;}                                          /*Area Minutes*/
-#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #EAAC8B; text-shadow: 0px 0px 30px white;}                                          /*Area Seconds*/
+#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; /*text-shadow: 0px 0px 30px white;*/ padding-left: 1rem; padding-right: 1rem; border-radius: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;} /*Area Title*/
+#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Days*/
+#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Hours*/
+#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Minutes*/
+#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Seconds*/
 
-.btitle{font-size: 2.5rem; color: white; font-family: 'Albert Sans', sans-serif;}     /*Cuenta Regresiva Title*/
+.btitle{font-size: 2.5rem; color: white; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}     /*Cuenta Regresiva Title*/
 .bnumber{font-size: 2.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}   /*Javascript Changing Number*/
 .btext{font-size: 1.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}     /*Category of time (Days/Hours/Minutes/Seconds)*/
+
+#b2{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
 /* END CUENTA REGRESIVA [#counter] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -282,8 +289,10 @@ button::after{text-decoration: none;}
 /* DATOS DE PAREJA [#couple] */
 #couple{
     /*Datos de Pareja whole grid*/
-    background-color: #0193a7;
+    background-color: #D3AC79;
     padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     /* ⚙⚙⚙ */
     display: grid;
     grid-gap: 0.5rem;
@@ -299,7 +308,8 @@ button::after{text-decoration: none;}
 .cdiv{
     /*Datos de Pareja Subarea*/
     padding: 2rem;
-    background-color: rgba(256, 256, 256, 0.2);
+    /*background-color: rgba(256, 256, 256, 0.0);*/
+    border: 2px solid white;
     backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
@@ -319,8 +329,8 @@ button::after{text-decoration: none;}
     color: white;
 }
 #novio h1{
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 2rem;
 }
 #phrase{
     color: #5c5c5c;
@@ -333,8 +343,8 @@ button::after{text-decoration: none;}
     color: white;
 }
 #novia h1{
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 2rem;
 }
 .cdiv h3{
     color: #5c5c5c;
@@ -359,6 +369,8 @@ button::after{text-decoration: none;}
 #places{
     /*Whole Religious and Party Grid*/
     padding: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     /* ⚙⚙⚙ */
     display: grid;
     grid-gap: 0rem;
@@ -380,8 +392,8 @@ button::after{text-decoration: none;}
 }
 #religious{
     /*Santa Prisca Whole Grid*/
-    background-color: #1e8100;
-    color: white;
+    background-color: white;
+    color: #008211;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
@@ -398,8 +410,8 @@ button::after{text-decoration: none;}
 #r3{grid-area: r3;}
 #party{
     /*Jardin San Julian Whole Grid*/
-    background-color: #EAAC8B;
-    color: #5c5c5c;
+    background-color: white;
+    color: #008211;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
@@ -421,7 +433,9 @@ button::after{text-decoration: none;}
     justify-content: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    background-color: rgba(256, 256, 256, 0.1);
+    /*background-color: rgba(256, 256, 256, 0.1);*/
+    /*background-color: #008211;*/
+    border: 2px solid #008211;
     border-radius: 1rem;
     display: block;
     margin-left: auto;
@@ -431,6 +445,7 @@ button::after{text-decoration: none;}
     margin-right: 0rem;
     margin-left: 0rem;
 }
+
 .places_p1{
     /*Where is? question for Santa Prisca and Jardin*/
     text-align: center;
@@ -489,6 +504,8 @@ td{
     background-size: cover;
     background-position: center center;
     padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     display: grid;
     grid-gap: 0.5rem;
@@ -589,12 +606,14 @@ td{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000116;
+    /*background-color: #000116;*/
+    background-color: #D3AC79;
 }
 .slider{
     /*Actual Carousel Area*/
     position: relative;
-    background: #000116;
+    /*background: #000116;*/
+    background-color: #D3AC79;
     width: 90vw;
     height: 80vh;
     overflow: hidden;
@@ -670,7 +689,7 @@ td{
 }
 .navigation-visibility .slide-icon.active{
     /*Mini-Square of the Current Image*/
-    background-color: chartreuse;
+    background-color: #D3AC79;
     filter: drop-shadow(0px 0px 5px black);
 }
 /* END CAROUSEL 2 GRID [#carousel_grid] */
@@ -691,8 +710,11 @@ td{
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* DATOS BANCARIOS [#bank] */
 #bank{
-    background-color: #044181;
+    /*background-color: #044181;*/
+    background-color: white;
     padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     display: grid;
     grid-gap: 0.5rem;
@@ -707,7 +729,8 @@ td{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    background-color: rgba(256, 256, 256, 0.6);
+    /*background-color: rgba(256, 256, 256, 0.6);*/
+    border: 2px solid #D3AC79;
     backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
@@ -766,8 +789,11 @@ td{
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* CONFIRMACION DE ASISTENCIA [#registration] */
 #registration{
-    background-color: #FF5733;
+    /*background-color: #FF5733;*/
+    background-color: #D3AC79;
     padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     display: grid;
     grid-gap: 0.5rem;
@@ -878,11 +904,14 @@ td{
     font-size: 0.8rem;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #FF5733;
+    /*color: #FF5733;*/
+    color: #D3AC79;
     text-decoration: none;
     border-radius: 0.5rem;
-    border-top: 3px solid #FF5733;
-    border-bottom: 3px solid #FF5733;
+    /*border-top: 3px solid #FF5733;*/
+    border-top: 3px solid #D3AC79;
+    /*border-bottom: 3px solid #FF5733;*/
+    border-bottom: 3px solid #D3AC79;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     padding-left: 1rem;
@@ -1150,6 +1179,10 @@ td{
     }
     #b1, #b2, #b3, #b4, #b5{
         border-radius: 1rem;
+    }
+    #b1{
+        margin-left: 0rem; 
+        margin-right: 0rem;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple{
