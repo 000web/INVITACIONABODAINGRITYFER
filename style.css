@@ -285,34 +285,85 @@ button::after{text-decoration: none;}
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* CUENTA REGRESIVA [#counter] */
+#counter{
+    background-image: url("images/e.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* ⚙⚙⚙ */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 #countdown{
     /*Cuenta Regresiva Grid inside [#counter]*/
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0rem;
     align-items: center;
-    background-color: white;
     color: black;
     /* ⚙⚙⚙ */
-    display: grid;
-    grid-gap: 0rem;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "b1 b2 b3 b4 b5";
+    border-radius: 1rem;
+    background-color: #eaddca;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /*display: grid;*/
+    /*grid-gap: 0rem;*/
+    /*grid-template-rows: 1fr;*/
+    /*grid-template-areas:*/
+    /*"b1 b2 b3 b4 b5";*/
 }
-#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; /*text-shadow: 0px 0px 30px white;*/ padding-left: 1rem; padding-right: 1rem; border-radius: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;} /*Area Title*/
-#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Days*/
-#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Hours*/
-#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Minutes*/
-#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          /*Area Seconds*/
+/*#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; /*text-shadow: 0px 0px 30px white;*/ /*padding-left: 1rem; padding-right: 1rem; border-radius: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;}*/ /*Area Title*/
+/*#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                       */   /*Area Days*/
+/*#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                        */  /*Area Hours*/
+/*#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          *//*Area Minutes*/
+/*#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          *//*Area Seconds*/
 
-.btitle{font-size: 2.5rem; color: white; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}     /*Cuenta Regresiva Title*/
-.bnumber{font-size: 2.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}   /*Javascript Changing Number*/
-.btext{font-size: 1.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;}     /*Category of time (Days/Hours/Minutes/Seconds)*/
+/*.btitle{font-size: 2.5rem; color: white; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;} */    /*Cuenta Regresiva Title*/
+/*.bnumber{font-size: 2.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;} */  /*Javascript Changing Number*/
+/*.btext{font-size: 1.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;} */    /*Category of time (Days/Hours/Minutes/Seconds)*/
 
-#b2{
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+/*#b2{*/
+    /*border-top-left-radius: 1rem;*/
+    /*border-bottom-left-radius: 1rem;*/
+/*}*/
+
+#b1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#b1 h1{
+    color: #30593b;
+    font-family: 'Libre Baskerville', serif;
+}
+#b1 p{
+    width: 200px;
+    margin-top: 1rem;
+    color: #7c7c7c;
+}
+#timers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.time{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    background-color: #6c9577;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 130px;
+    border-radius: 1rem;
 }
 /* END CUENTA REGRESIVA [#counter] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1037,9 +1088,9 @@ td{
         height: 80vh; /*Same as Slider Height in order to center them Vertically*/
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
-    #countdown{
+    /*#countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
-        padding-top: 2rem;
+        /*padding-top: 2rem;
         padding-bottom: 2rem;
         display: grid;
         grid-gap: 0rem;
@@ -1206,8 +1257,10 @@ td{
         height: 90vh; /*Same as Slider Height in order to center them Vertically*/
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    /*
     #countdown{
         /*Cuenta Regresiva Grid inside [#counter]*/
+        /*
         padding: 0.5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -1227,6 +1280,13 @@ td{
     #b1{
         margin-left: 0rem; 
         margin-right: 0rem;
+    }
+    */
+    #timers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple{
