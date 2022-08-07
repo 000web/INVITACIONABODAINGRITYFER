@@ -21,13 +21,17 @@
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* WHOLE WEBSITE STRUCTURE */
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courgette&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courgette&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/brittany-signature');
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -124,7 +128,7 @@ button::after{text-decoration: none;}
 .slider2 .slide2.active2 .info2{
     /*Active Text*/
     transition: 6s;
-    transform: scale(0.8);
+    transform: scale(0.95);
 }
 
 .slider2 .slide2 img{
@@ -136,12 +140,19 @@ button::after{text-decoration: none;}
     background-position: center center;
 }
 
+
+
+
+
+
+
+
 /* Text Over Images */
 .slider2 .slide2 .info2{
     /*Container of Wedding's Header Text*/
-    color: #222;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    /*color: #222;*/
+    /*background: rgba(255, 255, 255, 0.5);*/
+    /*box-shadow: 0 5px 25px rgb(1 1 1 / 5%);*/
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -149,29 +160,60 @@ button::after{text-decoration: none;}
     margin-right: auto;
     width: 350px;
     border-radius: 1rem;
-    margin-top: 57vh;
-    border: 3px solid #D3AC79;
+    margin-top: 35vh;
+    /*border: 3px solid #D3AC79;*/
 }
 
-.slider2 .slide2 .info2 h2{
+/*.slider2 .slide2 .info2 h2{*/
     /*Normal Text Container Configuration*/
-    font-size: 2rem;
-    font-weight: 800;
+    /*font-size: 2rem;*/
+    /*font-weight: 800;*/
+/*}*/
+
+/*.slider2 h1{*/
+    /*Normal Main Header Connfiguration Ingrit & Fernan*/
+    /*font-family: "Great Vibes", sans-serif;*/
+    /*font-size: 3rem;*/
+/*}*/
+
+.slider2 .table_head{
+    /*border: 2px solid chartreuse;*/
+    width: 350px;
 }
 
-.slider2 h1{
-    /*Normal Main Header Connfiguration Ingrit & Fernan*/
-    font-family: "Great Vibes", sans-serif;
-    font-size: 3rem;
+.r_border{
+    border-right: 2px solid white;
+    height: 10rem;
 }
+.nam{
+    font-size: 1.7rem;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+.date_h{
+    font-size: 0.8rem;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    padding-top: 1rem;
+}
+.inv_h{
+    font-size: 2rem;
+    font-family: 'Brittany Signature', sans-serif;
+    color: white;
+    padding-top: 1rem;
+}
+
+
+
+
 
 .navigation2{
     /*Arrow Button Area*/
     height: 90vh; /*Same as Slider Height in order to center them Vertically*/
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: opacity 0.5s ease;
 }
 .slider2:hover .navigation2{
@@ -183,9 +225,11 @@ button::after{text-decoration: none;}
     /*Common Arrow Buttons Configuration*/
     z-index: 999;
     font-size: 2rem;
-    color: #222;
-    background: rgba(255, 255, 255, 0.8);
+    /*color: #222;*/
+    color: white;
+    /*background: rgba(255, 255, 255, 0.8);*/
     padding: 10px;
+    padding-bottom: 20px;
     cursor: pointer;
 }
 
@@ -1155,7 +1199,7 @@ td{
     /* Text Over Images */
     .slider2 .slide2 .info2{
         /*Container of Wedding's Header Text*/
-        margin-top: 57vh;
+        margin-top: 35vh;
     }
     .navigation2{
         /*Arrow Button Area*/
