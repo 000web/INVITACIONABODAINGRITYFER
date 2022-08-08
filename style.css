@@ -586,7 +586,7 @@ td{
     padding: 0.5rem;
 }
 #itinerary{
-    background-image: url("images/leaves4.jpg");
+    background-image: url("images/leaves.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -720,7 +720,10 @@ td{
     justify-content: center;
     align-items: center;
     /*background-color: #000116;*/
-    background-color: #D3AC79;
+    background-image: url("images/leaves4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .slider{
     /*Actual Carousel Area*/
