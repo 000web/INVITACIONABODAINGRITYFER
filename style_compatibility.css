@@ -1,7 +1,18 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* IMPORTANT FOR MOBILE VISUALIZATION */
+@-o-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
 @viewport{
     zoom: 1.0;
     width: extend-to-zoom;
@@ -40,9 +51,11 @@
 html, body, #menu{margin: 0px;}
 
 #whole_website{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas:
+        grid-template-areas:
     "carousel1 carousel1"
     "counter counter"
     "couple couple"
@@ -53,15 +66,15 @@ html, body, #menu{margin: 0px;}
     "registration registration"
     "foot foot";
 }
-#carousel1{grid-area: carousel1;}
-#counter{grid-area: counter;}
-#couple{grid-area: couple;}
-#places{grid-area: places;}
-#itineray{grid-area: itinerary;}
-#carousel_grid{grid-area: carousel_grid;}
-#bank{grid-area: bank;}
-#registration{grid-area: registration;}
-#foot{grid-area: foot;}
+#carousel1{-ms-grid-row: 1;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: carousel1;}
+#counter{-ms-grid-row: 2;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: counter;}
+#couple{-ms-grid-row: 3;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: couple;}
+#places{-ms-grid-row: 4;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: places;}
+#itineray{-ms-grid-row: 5;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: itinerary;}
+#carousel_grid{-ms-grid-row: 6;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: carousel_grid;}
+#bank{-ms-grid-row: 7;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: bank;}
+#registration{-ms-grid-row: 8;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: registration;}
+#foot{-ms-grid-row: 9;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: foot;}
 
 button:visited{text-decoration: none;}
 button::after{text-decoration: none;}
@@ -93,12 +106,14 @@ button::after{text-decoration: none;}
     background-color: #000116;
     
     height: 90vh;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas:
+        grid-template-areas:
     "slider2";
 }
-.slider2{grid-area: slider2;}
+.slider2{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: slider2;}
 
 .slider2{
     /*Actual Carousel Area*/
@@ -113,30 +128,46 @@ button::after{text-decoration: none;}
     position: absolute;
     width: 100vw;
     height: 90vh;
-    clip-path: circle(0% at 100% 50%);
+    -webkit-clip-path: circle(0% at 100% 50%);
+            clip-path: circle(0% at 100% 50%);
 }
 .slider2 .slide2.active2{
     /*Each Image Area Division when Active*/
-    clip-path: circle(150% at 100% 50%);
+    -webkit-clip-path: circle(150% at 100% 50%);
+            clip-path: circle(150% at 100% 50%);
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
     transition: 1.5s;
 }
 
 .slider2 .slide2.active2 img{
     /*Active image*/
+    -webkit-transition: 6s;
+    -o-transition: 6s;
     transition: 6s;
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
 }
 
 .slider2 .slide2.active2 .info2{
     /*Active Text*/
+    -webkit-transition: 6s;
+    -o-transition: 6s;
     transition: 6s;
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
 }
 
 .slider2 .slide2.active2 .info3{
     /*LOGO TABLE*/
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
-    transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+        -ms-transform: scale(0.99);
+            transform: scale(0.99);
     position: absolute;
     width: 50px;
 }
@@ -154,7 +185,8 @@ button::after{text-decoration: none;}
     position: absolute;
     width: 100vw;
     height: 90vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-position: center center;
 }
 
@@ -224,10 +256,18 @@ button::after{text-decoration: none;}
 .navigation2{
     /*Arrow Button Area*/
     height: 90vh; /*Same as Slider Height in order to center them Vertically*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     opacity: 0.8;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
 }
 .slider2:hover .navigation2{
@@ -261,8 +301,12 @@ button::after{text-decoration: none;}
 .navigation-visibility2{
     /*Mini-Squares at the Bottom Area*/
     z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .navigation-visibility2 .slide-icon2{
@@ -271,7 +315,9 @@ button::after{text-decoration: none;}
     background: rgba(255, 255, 255, 0.3);
     width: 18px;
     height: 9px;
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
     margin: 0 6px;
     border-radius: 3px;
 }
@@ -279,7 +325,8 @@ button::after{text-decoration: none;}
 .navigation-visibility2 .slide-icon2.active2{
     /*Mini-Square of the Current Image*/
     background-color: #D3AC79;
-    filter: drop-shadow(0px 0px 5px black);
+    -webkit-filter: drop-shadow(0px 0px 5px black);
+            filter: drop-shadow(0px 0px 5px black);
 }
 /* END CAROUSEL1 [#carousel1] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -316,7 +363,9 @@ button::after{text-decoration: none;}
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: black;
     /* ⚙⚙⚙ */
     border-radius: 1rem;
@@ -328,10 +377,19 @@ button::after{text-decoration: none;}
 }
 
 #b1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 #b1 h1{
@@ -344,10 +402,19 @@ button::after{text-decoration: none;}
     color: #7c7c7c;
 }
 #timers{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .time{
     margin-top: 2rem;
@@ -363,9 +430,15 @@ button::after{text-decoration: none;}
 }
 #ready{
     margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 #ready h1{
     font-family: 'Brittany Signature', sans-serif;
@@ -406,27 +479,39 @@ button::after{text-decoration: none;}
     padding-right: 3rem;
 }
 #couple_inner{
+    display: -ms-grid;
     display: grid;
     grid-gap: 0.5rem;
+    -ms-grid-columns: 1fr 0.5rem 1fr 0.5rem 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
+        grid-template-areas:
     "novia phrase novio";
     background-color: rgba(46, 65, 39, 0.6);
 }
-#novia{grid-area: novia;}
-#phrase{grid-area: phrase;}
-#novio{grid-area: novio;}
+#novia{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: novia;}
+#phrase{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: phrase;}
+#novio{-ms-grid-row: 1;-ms-grid-column: 5;grid-area: novio;}
 
 .cdiv{
     /*Datos de Pareja Subarea*/
     padding: 2rem;
     border-radius: 1rem;
     color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 }
 
@@ -485,15 +570,18 @@ button::after{text-decoration: none;}
     background-size: cover;
     background-position: center center;
     /* ⚙⚙⚙ */
+    display: -ms-grid;
     display: grid;
     grid-gap: 0rem;
+    -ms-grid-columns: 1fr 0rem 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
+        grid-template-areas:
     "religious party";
 }
-#religious{grid-area: religious;}
-#party{grid-area: party;}
+#religious{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: religious;}
+#party{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: party;}
 
 .dimage{
     /*Santa Prisca and Jardin images*/
@@ -515,10 +603,19 @@ button::after{text-decoration: none;}
     background-color: white;
     margin-left: 3rem;
     margin-right: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 2rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -551,13 +648,21 @@ button::after{text-decoration: none;}
 }
 
 .dimage:hover{
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
     opacity: 0.8;
 }
 .dimage{
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
 }
 /* END PLACES [#religious & #party] inside [#places] */
@@ -596,17 +701,20 @@ td{
     padding-right: 3rem;
 }
 #itinerary_inner{
+    display: -ms-grid;
     display: grid;
     grid-gap: 0.5rem;
+    -ms-grid-columns: 1fr 0.5rem 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
+    -ms-grid-rows: auto 0.5rem auto;
+        grid-template-areas:
     "fhead fhead"
     "flist fclothing";
     background-color: #2d553b;
 }
-#fhead{grid-area: fhead;}
-#flist{grid-area: flist;}
-#fclothing{grid-area: fclothing;}
+#fhead{-ms-grid-row: 1;-ms-grid-column: 1;-ms-grid-column-span: 3;grid-area: fhead;}
+#flist{-ms-grid-row: 3;-ms-grid-column: 1;grid-area: flist;}
+#fclothing{-ms-grid-row: 3;-ms-grid-column: 3;grid-area: fclothing;}
 
 #fhead h1{
     font-family: 'Libre Baskerville', serif;
@@ -623,10 +731,19 @@ td{
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #ftable{
     margin-right: auto;
@@ -716,9 +833,15 @@ td{
 /* CAROUSEL 2 GRID [#carousel_grid] */
 #carousel_grid{
     height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /*background-color: #000116;*/
     background-color: #D3AC79;
 }
@@ -737,29 +860,44 @@ td{
     position: absolute;
     width: 90vw;
     height: 80vh;
-    clip-path: circle(0% at 100% 50%);
+    -webkit-clip-path: circle(0% at 100% 50%);
+            clip-path: circle(0% at 100% 50%);
 }
 .slider .slide.active{
-    clip-path: circle(150% at 100% 50%);
+    -webkit-clip-path: circle(150% at 100% 50%);
+            clip-path: circle(150% at 100% 50%);
+    -webkit-transition: 3s;
+    -o-transition: 3s;
     transition: 3s;
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
 }
 .slider .slide img{
     /*Image Configuration*/
     position: absolute;
     width: 90vw;
     height: 80vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-position: center center;
 }
 
 .navigation{
     /*Arrow Button Area*/
     height: 80vh; /*Same as Slider Height in order to center them Vertically*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     opacity: 0.5;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
 }
 .slider:hover .navigation{
@@ -787,8 +925,12 @@ td{
 .navigation-visibility{
     /*Mini-Squares at the Bottom Area*/
     z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .navigation-visibility .slide-icon{
     /*Each Mini-Square Configuration*/
@@ -796,14 +938,17 @@ td{
     background: rgba(255, 255, 255, 0.3);
     width: 18px;
     height: 9px;
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
     margin: 0 6px;
     border-radius: 3px;
 }
 .navigation-visibility .slide-icon.active{
     /*Mini-Square of the Current Image*/
     background-color: #D3AC79;
-    filter: drop-shadow(0px 0px 5px black);
+    -webkit-filter: drop-shadow(0px 0px 5px black);
+            filter: drop-shadow(0px 0px 5px black);
 }
 /* END CAROUSEL 2 GRID [#carousel_grid] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -836,25 +981,35 @@ td{
     padding-bottom: 2rem;
 }
 #bank_inner{
+    display: -ms-grid;
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-areas:
+        grid-template-areas:
     "hlogo htext bankdata";
     background-color: white;
 }
-#hlogo{grid-area: hlogo;}
-#htext{grid-area: htext;}
-#bankdata{grid-area: bankdata;}
+#hlogo{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: hlogo;}
+#htext{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: htext;}
+#bankdata{-ms-grid-row: 1;-ms-grid-column: 5;grid-area: bankdata;}
 
 .hdiv{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 }
 
@@ -937,17 +1092,18 @@ td{
     padding-right: 3rem;
 }
 #registration_inner{
+    display: -ms-grid;
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-areas:
+        grid-template-areas:
     "icontact_planeadora ihead icontact_novios"
     "iguala iguala iguala";
     background-color: #2d553b;
 }
-#ihead{grid-area: ihead; z-index: 2;}
-#icontact_planeadora{grid-area: icontact_planeadora;}
-#icontact_novios{grid-area: icontact_novios;}
-#iguala{grid-area: iguala;}
+#ihead{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: ihead; z-index: 2;}
+#icontact_planeadora{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: icontact_planeadora;}
+#icontact_novios{-ms-grid-row: 1;-ms-grid-column: 5;grid-area: icontact_novios;}
+#iguala{-ms-grid-row: 3;-ms-grid-column: 1;-ms-grid-column-span: 5;grid-area: iguala;}
 
 
 #ihead h1{
@@ -968,10 +1124,19 @@ td{
     /*backdrop-filter: blur(70px);*/
     /*-webkit-backdrop-filter: blur(70px);*/
     border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 }
 .idiv h3{
@@ -1047,16 +1212,29 @@ td{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: "Poppins", sans-serif;
     color: white;
 }
 #love{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #love p{
     font-family: 'Great Vibes', cursive;
@@ -1114,9 +1292,11 @@ td{
 @media (max-width: 1000px){
     /*For TABLET AND HORIZONTAL SMARTPHONE*/
     #whole_website{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+            grid-template-areas:
         "carousel1"
         "counter"
         "couple"
@@ -1127,15 +1307,15 @@ td{
         "registration"
         "foot";
     }
-    #carousel1{grid-area: carousel1;}
-    #counter{grid-area: counter;}
-    #couple{grid-area: couple;}
-    #places{grid-area: places;}
-    #itinerary{grid-area: itinerary;}
-    #carousel_grid{grid-area: carousel_grid;}
-    #bank{grid-area: bank;}
-    #registration{grid-area: registration;}
-    #foot{grid-area: foot;}
+    #carousel1{-ms-grid-row: 1;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: carousel1;}
+    #counter{-ms-grid-row: 2;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: counter;}
+    #couple{-ms-grid-row: 3;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: couple;}
+    #places{-ms-grid-row: 4;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: places;}
+    #itinerary{-ms-grid-row: 5;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: itinerary;}
+    #carousel_grid{-ms-grid-row: 6;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: carousel_grid;}
+    #bank{-ms-grid-row: 7;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: bank;}
+    #registration{-ms-grid-row: 8;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: registration;}
+    #foot{-ms-grid-row: 9;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: foot;}
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel1{
         height: 80vh;
@@ -1168,20 +1348,26 @@ td{
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple_inner{
+        display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr 0.5rem 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0.5rem auto;
+            grid-template-areas:
         "novia novio"
         "phrase phrase";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #places{
         /*Whole Religious and Party Grid*/
+        display: -ms-grid;
         display: grid;
         grid-gap: 0rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0rem auto;
+            grid-template-areas:
         "religious"
         "party";
         background-color: white;
@@ -1192,10 +1378,13 @@ td{
         padding-bottom: 0rem;
     }
     #itinerary_inner{
+        display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0.5rem auto 0.5rem auto;
+            grid-template-areas:
         "fhead"
         "flist"
         "fclothing";
@@ -1228,10 +1417,13 @@ td{
         padding-bottom: 0rem;
     }
     #bank_inner{
+        display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0.5rem auto;
+            grid-template-areas:
         "hlogo htext" 
         "bankdata bankdata";
         padding-top: 2rem;
@@ -1245,9 +1437,10 @@ td{
     #registration_inner{
         padding-top: 2rem;
         padding-bottom: 2rem;
+        display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
-        grid-template-areas:
+            grid-template-areas:
         "ihead ihead"
         "icontact_planeadora icontact_novios"
         "iguala iguala";
@@ -1258,6 +1451,116 @@ td{
         padding-bottom: 2rem;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #carousel1{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #counter{
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #couple{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #places{
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #itineray{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #carousel_grid{
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+    #bank{
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #registration{
+        -ms-grid-row: 8;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #foot{
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #novia{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #phrase{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    #novio{
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+    #religious{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #party{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #fhead{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #flist{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #fclothing{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    #hlogo{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #htext{
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+    #bankdata{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    #ihead{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    #icontact_planeadora{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #icontact_novios{
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+    #iguala{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
 }
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1278,9 +1581,11 @@ td{
 @media (max-width: 570px){
     /*For VERTICAL SMARTPHONE*/
     #whole_website{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+            grid-template-areas:
         "carousel1"
         "counter"
         "couple"
@@ -1291,15 +1596,154 @@ td{
         "registration"
         "foot";
     }
-    #carousel1{grid-area: carousel1;}
-    #counter{grid-area: counter;}
-    #couple{grid-area: couple;}
-    #places{grid-area: places;}
-    #intinerary{grid-area: itinerary;}
-    #carousel_grid{grid-area: carousel_grid;}
-    #bank{grid-area: bank;}
-    #registration{grid-area: registration;}
-    #foot{grid-area: foot;}
+    #carousel1{-ms-grid-row: 1;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: carousel1;}
+    #counter{-ms-grid-row: 2;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: counter;}
+    #couple{-ms-grid-row: 3;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: couple;}
+    #places{-ms-grid-row: 4;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: places;}
+    #intinerary{-ms-grid-row: 5;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: itinerary;}
+    #carousel_grid{-ms-grid-row: 6;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: carousel_grid;}
+    #bank{-ms-grid-row: 7;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: bank;}
+    #registration{-ms-grid-row: 8;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: registration;}
+    #foot{-ms-grid-row: 9;-ms-grid-column: 1;-ms-grid-column-span: 2;grid-area: foot;}
+    @media (max-width: 1000px){
+    #carousel1{
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #counter{
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #couple{
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #places{
+            -ms-grid-row: 4;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #itinerary{
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #carousel_grid{
+            -ms-grid-row: 6;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
+    }
+    #bank{
+            -ms-grid-row: 7;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #registration{
+            -ms-grid-row: 8;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #foot{
+            -ms-grid-row: 9;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #carousel1{
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #counter{
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #couple{
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #places{
+            -ms-grid-row: 4;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #intinerary{
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #carousel_grid{
+            -ms-grid-row: 6;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
+    }
+    #bank{
+            -ms-grid-row: 7;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #registration{
+            -ms-grid-row: 8;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #foot{
+            -ms-grid-row: 9;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    }
+    @media (max-width: 570px){
+    #carousel1{
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #counter{
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #couple{
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #places{
+            -ms-grid-row: 4;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #intinerary{
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #carousel_grid{
+            -ms-grid-row: 6;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #bank{
+            -ms-grid-row: 7;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #registration{
+            -ms-grid-row: 8;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    #foot{
+            -ms-grid-row: 9;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+    }
+    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel1{
         height: 90vh;
@@ -1331,10 +1775,19 @@ td{
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #timers{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple{
@@ -1343,8 +1796,10 @@ td{
     }
     #couple_inner{
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0.5rem auto 0.5rem auto;
+            grid-template-areas:
         "novia"
         "phrase"
         "novio";
@@ -1352,10 +1807,13 @@ td{
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #places{
         /*Whole Religious and Party Grid*/
+        display: -ms-grid;
         display: grid;
         grid-gap: 0rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0rem auto;
+            grid-template-areas:
         "religious"
         "party";
     }
@@ -1365,10 +1823,13 @@ td{
         padding-bottom: 0rem;
     }
     #itinerary_inner{
+        display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0.5rem auto 0.5rem auto;
+            grid-template-areas:
         "fhead"
         "flist"
         "fclothing";
@@ -1401,10 +1862,13 @@ td{
         padding-bottom: 0rem;
     }
     #bank_inner{
+        display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0.5rem auto 0.5rem auto;
+            grid-template-areas:
         "hlogo" 
         "htext" 
         "bankdata";
@@ -1419,10 +1883,13 @@ td{
     #registration_inner{
         padding-top: 2rem;
         padding-bottom: 2rem;
+        display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        -ms-grid-rows: auto 0.5rem auto 0.5rem auto 0.5rem auto;
+            grid-template-areas:
         "ihead"
         "icontact_planeadora"
         "icontact_novios"
@@ -1434,6 +1901,161 @@ td{
         padding-bottom: 2rem;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+    #carousel1{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #counter{
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #couple{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #places{
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #itineray{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #carousel_grid{
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #bank{
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #registration{
+        -ms-grid-row: 8;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #foot{
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #novia{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #phrase{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #novio{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    #religious{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #party{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #fhead{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #flist{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #fclothing{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    #hlogo{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #htext{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #bankdata{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #ihead{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #icontact_planeadora{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #icontact_novios{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    #iguala{
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #carousel1{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #counter{
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #couple{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #places{
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #itinerary{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #carousel_grid{
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #bank{
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #registration{
+        -ms-grid-row: 8;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #foot{
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
 }
 /* END REACTIVITY */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
