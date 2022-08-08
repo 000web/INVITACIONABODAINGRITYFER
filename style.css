@@ -81,6 +81,8 @@ button::after{text-decoration: none;}
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -140,19 +142,9 @@ button::after{text-decoration: none;}
     background-position: center center;
 }
 
-
-
-
-
-
-
-
 /* Text Over Images */
 .slider2 .slide2 .info2{
     /*Container of Wedding's Header Text*/
-    /*color: #222;*/
-    /*background: rgba(255, 255, 255, 0.5);*/
-    /*box-shadow: 0 5px 25px rgb(1 1 1 / 5%);*/
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -163,18 +155,6 @@ button::after{text-decoration: none;}
     margin-top: 35vh;
     /*border: 3px solid #D3AC79;*/
 }
-
-/*.slider2 .slide2 .info2 h2{*/
-    /*Normal Text Container Configuration*/
-    /*font-size: 2rem;*/
-    /*font-weight: 800;*/
-/*}*/
-
-/*.slider2 h1{*/
-    /*Normal Main Header Connfiguration Ingrit & Fernan*/
-    /*font-family: "Great Vibes", sans-serif;*/
-    /*font-size: 3rem;*/
-/*}*/
 
 .slider2 .table_head{
     /*border: 2px solid chartreuse;*/
@@ -203,10 +183,6 @@ button::after{text-decoration: none;}
     padding-top: 1rem;
 }
 
-
-
-
-
 .navigation2{
     /*Arrow Button Area*/
     height: 90vh; /*Same as Slider Height in order to center them Vertically*/
@@ -227,7 +203,6 @@ button::after{text-decoration: none;}
     font-size: 2rem;
     /*color: #222;*/
     color: white;
-    /*background: rgba(255, 255, 255, 0.8);*/
     padding: 10px;
     padding-bottom: 20px;
     cursor: pointer;
@@ -279,6 +254,8 @@ button::after{text-decoration: none;}
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -286,7 +263,7 @@ button::after{text-decoration: none;}
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* CUENTA REGRESIVA [#counter] */
 #counter{
-    background-image: url("images/e.jpeg");
+    background-image: url("images/leaves.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -310,26 +287,7 @@ button::after{text-decoration: none;}
     padding-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    /*display: grid;*/
-    /*grid-gap: 0rem;*/
-    /*grid-template-rows: 1fr;*/
-    /*grid-template-areas:*/
-    /*"b1 b2 b3 b4 b5";*/
 }
-/*#b1{grid-area: b1; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; /*text-shadow: 0px 0px 30px white;*/ /*padding-left: 1rem; padding-right: 1rem; border-radius: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;}*/ /*Area Title*/
-/*#b2{grid-area: b2; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                       */   /*Area Days*/
-/*#b3{grid-area: b3; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                        */  /*Area Hours*/
-/*#b4{grid-area: b4; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          *//*Area Minutes*/
-/*#b5{grid-area: b5; margin-top: 0rem; margin-bottom: 0rem; text-align: center; background-color: #D3AC79; text-shadow: 0px 0px 30px white;}                                          *//*Area Seconds*/
-
-/*.btitle{font-size: 2.5rem; color: white; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;} */    /*Cuenta Regresiva Title*/
-/*.bnumber{font-size: 2.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;} */  /*Javascript Changing Number*/
-/*.btext{font-size: 1.2rem; padding: 0.5rem; font-family: 'Albert Sans', sans-serif; padding-top: 1rem; padding-bottom: 1rem;} */    /*Category of time (Days/Hours/Minutes/Seconds)*/
-
-/*#b2{*/
-    /*border-top-left-radius: 1rem;*/
-    /*border-bottom-left-radius: 1rem;*/
-/*}*/
 
 #b1{
     display: flex;
@@ -365,6 +323,19 @@ button::after{text-decoration: none;}
     width: 130px;
     border-radius: 1rem;
 }
+#ready{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ready h1{
+    font-family: 'Brittany Signature', sans-serif;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #7c7c7c;
+    /*text-shadow: 0px 0px 10px crimson;*/
+}
 /* END CUENTA REGRESIVA [#counter] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -376,6 +347,8 @@ button::after{text-decoration: none;}
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -384,29 +357,32 @@ button::after{text-decoration: none;}
 /* DATOS DE PAREJA [#couple] */
 #couple{
     /*Datos de Pareja whole grid*/
-    background-color: #D3AC79;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-image: url("images/j/v7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     /* ⚙⚙⚙ */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#couple_inner{
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "novio phrase novia";
+    "novia phrase novio";
+    background-color: rgba(46, 65, 39, 0.6);
 }
-#novio{grid-area: novio;}
-#phrase{grid-area: phrase;}
 #novia{grid-area: novia;}
+#phrase{grid-area: phrase;}
+#novio{grid-area: novio;}
 
 .cdiv{
     /*Datos de Pareja Subarea*/
     padding: 2rem;
-    /*background-color: rgba(256, 256, 256, 0.0);*/
-    border: 2px solid white;
-    backdrop-filter: blur(70px);
-    -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
     color: black;
     display: flex;
@@ -415,34 +391,33 @@ button::after{text-decoration: none;}
     justify-content: center;
     text-align: center;
 }
-.cimage{
-    /*Mustache and Crown images*/
-    width: 50px;
-    filter: drop-shadow(0px 0px 10px white);
-}
+
 #novio{
     color: white;
 }
 #novio h1{
-    font-family: 'Albert Sans', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
+    font-weight: 500;
 }
-#phrase{
-    color: #5c5c5c;
-    font-weight: 600;
+#phrase p{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Libre Baskerville', serif;
 }
-#couple p{
-    font-size: 1.2rem;
-}
+
 #novia{
     color: white;
 }
 #novia h1{
-    font-family: 'Albert Sans', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
+    font-weight: 500;
 }
 .cdiv h3{
-    color: #5c5c5c;
+    color: white;
+    font-family: 'Brittany Signature', sans-serif;
+    font-size: 1.2rem;
 }
 /* END DATOS DE PAREJA [#couple] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -455,6 +430,8 @@ button::after{text-decoration: none;}
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -464,8 +441,10 @@ button::after{text-decoration: none;}
 #places{
     /*Whole Religious and Party Grid*/
     padding: 0rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-image: url("images/leaves.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     /* ⚙⚙⚙ */
     display: grid;
     grid-gap: 0rem;
@@ -479,87 +458,59 @@ button::after{text-decoration: none;}
 
 .dimage{
     /*Santa Prisca and Jardin images*/
-    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 95%;
     border-radius: 1rem;
 }
-#religious{
-    /*Santa Prisca Whole Grid*/
-    background-color: white;
-    color: #008211;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "r1"
-    "r2"
-    "r3";
-}
-#r1{grid-area: r1;}
-#r2{grid-area: r2;}
-#r3{grid-area: r3;}
-#party{
-    /*Jardin San Julian Whole Grid*/
-    background-color: white;
-    color: #008211;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "p1"
-    "p2"
-    "p3";
-}
-#p1{grid-area: p1;}
-#p2{grid-area: p2;}
-#p3{grid-area: p3;}
 
-.text{
-    /*2 containers of text. 1 for Santa Prisca Text. 1 for Jardin Text*/
+.d_d{
+    /* Global Place Type Container*/
+    color: #30593b;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.sub_d{
+    /*Text and Map Type of Container*/
+    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    /*background-color: rgba(256, 256, 256, 0.1);*/
-    /*background-color: #008211;*/
-    border: 2px solid #008211;
-    border-radius: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-right: 0rem;
-    margin-left: 0rem;
+    padding-top: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
-
 .places_p1{
-    /*Where is? question for Santa Prisca and Jardin*/
+    font-family: 'Libre Baskerville', serif;
+    color: #30593b;
+    font-weight: 600;
     text-align: center;
-    font-size: 1.7rem;
-    font-weight: 800;
 }
 .places_p2{
-    /*Place Name for Santa Prisca and Jardin*/
-    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #30593b;
     font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+}
+.places_p3{
+    font-family: 'Libre Baskerville', serif;
+    color: #30593b;
     font-weight: 600;
+    text-align: center;
 }
 .map{
-    /*Google Maps iframe*/
-    display: block;
-    width: 100%;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border-radius: 1rem;
-    /*margin-bottom: 1rem;*/
+    /*box-shadow: 0px 0px 10px #30593b;*/
 }
+
 .dimage:hover{
     transition: 2s;
     transform: scale(0.9);
@@ -581,6 +532,8 @@ button::after{text-decoration: none;}
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -594,36 +547,42 @@ td{
     padding: 0.5rem;
 }
 #itinerary{
-    background-image: url("images/d.jpeg");
+    background-image: url("images/leaves4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#itinerary_inner{
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "fhead fhead"
     "flist fclothing";
+    background-color: #2d553b;
 }
 #fhead{grid-area: fhead;}
 #flist{grid-area: flist;}
 #fclothing{grid-area: fclothing;}
 
 #fhead h1{
-    font-size: 2.5rem;
-    font-family: 'Albert Sans', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-align: center;
+}
+#fhead p{
+    width: 250px;
+    color: white;
+    text-align: center;
 }
 .fdiv{
     padding: 2rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    background-color: rgba(256, 256, 256, 0.2);
-    backdrop-filter: blur(70px);
-    -webkit-backdrop-filter: blur(70px);
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -635,10 +594,10 @@ td{
     margin-left: auto;
 }
 .adjust_td{
-    min-width: 100px;
+    min-width: 80px;
 }
 .right_border{
-    border-right: 3px dashed black;
+    border-right: 3px dashed white;
     height: 4rem;
 }
 .fimage{
@@ -647,19 +606,22 @@ td{
     margin-bottom: 2rem;
 }
 .ftime{
-    background-color: rgb(5, 141, 0);
+    background-color: rgb(92, 141, 90);
     color: white;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
     border-radius: 0.5rem;
-    text-shadow: 0px 0px 15px black;
+    text-shadow: 0px 0px 10px black;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: lighter;
+
 }
 .left{
     text-align: left;
@@ -668,16 +630,31 @@ td{
     font-weight: 800;
 }
 .activity{
+    font-size: 0.9rem;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-weight: lighter;
+}
+.subplace{
+    font-family: 'Brittany Signature', sans-serif;
     font-size: 1.2rem;
+    color: white;
+    font-weight: lighter;
 }
 #fclothing h3{
     font-size: 1.2rem;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
 }
 #fclothing p{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    text-align: justify;
-    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
 }
 /* END ITINERARIO [#itinerary] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -690,6 +667,8 @@ td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -798,6 +777,8 @@ td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -877,6 +858,8 @@ td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -964,6 +947,8 @@ td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1024,6 +1009,8 @@ td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /*font-family: 'Albert Sans', sans-serif;*/
@@ -1031,6 +1018,8 @@ td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Libre Baskerville', serif;*/
+/*font-family: 'Brittany Signature', sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1088,27 +1077,13 @@ td{
         height: 80vh; /*Same as Slider Height in order to center them Vertically*/
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
-    /*#countdown{
-        /*Cuenta Regresiva Grid inside [#counter]*/
-        /*padding-top: 2rem;
-        padding-bottom: 2rem;
-        display: grid;
-        grid-gap: 0rem;
-        grid-template-rows: 1fr;
-        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "b1 b2 b3 b4 b5";
-    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
-    #couple{
-        /*Datos de Pareja whole grid*/
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+    #couple_inner{
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        "novio novia"
+        "novia novio"
         "phrase phrase";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1120,17 +1095,14 @@ td{
         grid-template-areas:
         "religious"
         "party";
-    }
-    #religious{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    #party{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        background-color: white;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #itinerary{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #itinerary_inner{
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr;
@@ -1257,31 +1229,6 @@ td{
         height: 90vh; /*Same as Slider Height in order to center them Vertically*/
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
-    /*
-    #countdown{
-        /*Cuenta Regresiva Grid inside [#counter]*/
-        /*
-        padding: 0.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        display: grid;
-        grid-gap: 0.5rem;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "b1"
-        "b2"
-        "b3"
-        "b4"
-        "b5";
-    }
-    #b1, #b2, #b3, #b4, #b5{
-        border-radius: 1rem;
-    }
-    #b1{
-        margin-left: 0rem; 
-        margin-right: 0rem;
-    }
-    */
     #timers{
     display: flex;
     flex-direction: column;
@@ -1290,16 +1237,16 @@ td{
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #couple{
-        /*Datos de Pareja whole grid*/
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        display: grid;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #couple_inner{
         grid-gap: 0.5rem;
         grid-template-columns: 1fr;
         grid-template-areas:
-        "novio"
+        "novia"
         "phrase"
-        "novia";
+        "novio";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #places{
@@ -1311,16 +1258,12 @@ td{
         "religious"
         "party";
     }
-    #religious{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    #party{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #itinerary{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #itinerary_inner{
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr;
