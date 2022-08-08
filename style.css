@@ -166,7 +166,7 @@ button::after{text-decoration: none;}
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
+    width: 288px;
     border-radius: 1rem;
     margin-top: 35vh;
     /*border: 3px solid #D3AC79;*/
@@ -196,7 +196,7 @@ button::after{text-decoration: none;}
 
 .slider2 .table_head{
     /*border: 2px solid chartreuse;*/
-    width: 350px;
+    width: 288px;
 }
 
 .r_border{
