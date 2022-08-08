@@ -1288,7 +1288,7 @@ td{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-        /*"carousel1"*/
+        "carousel1"
         "counter"
         "couple"
         "places"
