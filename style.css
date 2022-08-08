@@ -243,6 +243,9 @@ button::after{text-decoration: none;}
     background-color: #D3AC79;
     filter: drop-shadow(0px 0px 5px black);
 }
+
+
+
 /* END CAROUSEL1 [#carousel1] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -787,15 +790,21 @@ td{
 /* DATOS BANCARIOS [#bank] */
 #bank{
     /*background-color: #044181;*/
-    background-color: white;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
+    background-image: url("images/leaves.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#bank_inner{
     display: grid;
     grid-gap: 0.5rem;
     grid-template-areas:
     "hlogo htext bankdata";
+    background-color: white;
 }
 #hlogo{grid-area: hlogo;}
 #htext{grid-area: htext;}
@@ -805,10 +814,6 @@ td{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    /*background-color: rgba(256, 256, 256, 0.6);*/
-    border: 2px solid #D3AC79;
-    backdrop-filter: blur(70px);
-    -webkit-backdrop-filter: blur(70px);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -817,17 +822,25 @@ td{
     text-align: center;
 }
 
+.r_border_green{
+    border-right: 2px solid #30593b;
+    height: 10rem;
+}
+.nam_green{
+    font-size: 1.7rem;
+    font-family: 'Libre Baskerville', serif;
+    color: #30593b;
+}
+
 #htext p{
     font-size: 1rem;
-    text-align: justify;
+    text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-weight: 600;
-    color: #5c5c5c;
+    color: #30593b;
 }
-.himage{
-    width: 200px;
-}
+
 .bankimg{
     width: 100px;
 }
@@ -835,17 +848,27 @@ td{
     margin-left: auto;
     margin-right: auto;
 }
+/*
 .top_border{
     border-top: 2px solid #044181;
 }
+*/
 .cat{
-    font-weight: 800;
+    font-weight: 700;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: white;
 }
 .dat{
-    color: #5c5c5c;
-    font-weight: 800;
+    color: white;
+    font-weight: 400;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.gr{
+    background-color: #6c9577;
 }
 /* END DATOS BANCARIOS [#bank] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -868,28 +891,45 @@ td{
 /* CONFIRMACION DE ASISTENCIA [#registration] */
 #registration{
     /*background-color: #FF5733;*/
-    background-color: #D3AC79;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
+    background-image: url("images/leaves4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#registration_inner{
     display: grid;
     grid-gap: 0.5rem;
     grid-template-areas:
     "icontact_planeadora ihead icontact_novios"
     "iguala iguala iguala";
+    background-color: #2d553b;
 }
 #ihead{grid-area: ihead; z-index: 2;}
 #icontact_planeadora{grid-area: icontact_planeadora;}
 #icontact_novios{grid-area: icontact_novios;}
 #iguala{grid-area: iguala;}
+
+
+#ihead h1{
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+#ihead p{
+    /*font-family: 'Libre Baskerville', serif;*/
+    color: white;
+}
+
 .idiv{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    background-color: rgba(256, 256, 256, 0.2);
-    backdrop-filter: blur(70px);
-    -webkit-backdrop-filter: blur(70px);
+    /*background-color: rgba(256, 256, 256, 0.2);*/
+    /*backdrop-filter: blur(70px);*/
+    /*-webkit-backdrop-filter: blur(70px);*/
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -898,14 +938,19 @@ td{
     text-align: center;
 }
 .idiv h3{
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-transform: uppercase;
+
 }
 #customAddToCalendar {
-    background-color: #00C5FF;
+    /*background-color: #00C5FF;*/
+    background-color: white;
     font-size: 1rem;
     padding: 0.5rem 2rem;
-    color: black;
-    text-shadow: 0px 0px 10px blue;
+    color: #2d553b;
+    text-shadow: 0px 0px 10px #D3AC79;
     font-weight: 500;
     cursor: pointer;
     border: none;
@@ -1135,6 +1180,10 @@ td{
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #bank{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #bank_inner{
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr;
@@ -1146,6 +1195,10 @@ td{
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #registration{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #registration_inner{
         padding-top: 2rem;
         padding-bottom: 2rem;
         display: grid;
@@ -1296,6 +1349,10 @@ td{
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #bank{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #bank_inner{
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr;
@@ -1308,6 +1365,10 @@ td{
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #registration{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #registration_inner{
         padding-top: 2rem;
         padding-bottom: 2rem;
         display: grid;
