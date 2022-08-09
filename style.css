@@ -621,7 +621,7 @@ td{
     text-align: center;
 }
 #fhead p{
-    width: 250px;
+    width: 230px;
     color: white;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
@@ -648,7 +648,8 @@ td{
     height: 4rem;
 }
 .fimage{
-    width: 250px;
+    width: 230px;
+    border: 2px solid crimson;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
