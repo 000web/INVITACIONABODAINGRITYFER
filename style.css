@@ -1026,11 +1026,12 @@ td{
     font-family: 'Libre Baskerville', serif;
     width: 250px;
 }
-.subplace2{
-    font-size: 0.1rem;
-    color: white;
+.subplace_2{
+    font-size: 0.75rem;
+    color: #D3AC79;
     text-align: justify;
     font-family: 'Libre Baskerville', serif;
+    padding-right: 2rem;
 }
 
 /* END CONFIRMACION DE ASISTENCIA [#registration] */
