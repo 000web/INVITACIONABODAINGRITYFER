@@ -438,7 +438,7 @@ button::after{text-decoration: none;}
 }
 #novio h1{
     font-family: 'Libre Baskerville', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 #phrase p{
@@ -455,7 +455,7 @@ button::after{text-decoration: none;}
 }
 #novia h1{
     font-family: 'Libre Baskerville', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 .cdiv h3{
@@ -955,36 +955,32 @@ td{
     padding-right: 3rem;
 }
 #registration_inner{
+    background-color: #2d553b;
     display: grid;
     grid-gap: 0.5rem;
     grid-template-areas:
     "icontact_planeadora ihead icontact_novios"
     "iguala iguala iguala";
-    background-color: #2d553b;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #ihead{grid-area: ihead; z-index: 2;}
 #icontact_planeadora{grid-area: icontact_planeadora;}
 #icontact_novios{grid-area: icontact_novios;}
 #iguala{grid-area: iguala;}
 
-
 #ihead h1{
     font-family: 'Libre Baskerville', serif;
     color: white;
 }
 #ihead p{
-    /*font-family: 'Libre Baskerville', serif;*/
+    font-family: 'Libre Baskerville', serif;
     color: white;
-    width: 2580px;
+    width: 250px;
 }
-
 .idiv{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    /*background-color: rgba(256, 256, 256, 0.2);*/
-    /*backdrop-filter: blur(70px);*/
-    /*-webkit-backdrop-filter: blur(70px);*/
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -993,24 +989,21 @@ td{
     text-align: center;
 }
 .idiv h3{
-    /*font-size: 1.5rem;*/
+    font-size: 1.2rem;
     font-family: 'Libre Baskerville', serif;
     color: white;
     text-transform: uppercase;
-
 }
-#customAddToCalendar {
-    /*background-color: #00C5FF;*/
-    background-color: white;
+#customAddToCalendar{
+    background-color: #D3AC79;
     font-size: 1rem;
     padding: 0.5rem 2rem;
     color: #2d553b;
-    text-shadow: 0px 0px 10px #D3AC79;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     border: none;
-    border-radius: 2rem;
-  }
+    border-radius: 1rem;
+}
 .fa{
     padding: 1rem;
     width: 2rem;
@@ -1020,25 +1013,25 @@ td{
     color: white;
     border-radius: 2rem;
     font-size: 2rem;
-    text-decoration: none;
 }
-.fa-whatsapp {
-    background: #13990a;
+.fa-whatsapp{
+    background-color: #13990a;
 }
 #s1, #s2{
     font-size: 2rem;
 }
-
-
 .p2c{
     color: white;
-    padding: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    width: 250px;
 }
-.subplace_2{
-    font-size: 0.75rem;
+.subplace2{
+    font-size: 0.1rem;
     color: white;
     text-align: justify;
+    font-family: 'Libre Baskerville', serif;
 }
+
 /* END CONFIRMACION DE ASISTENCIA [#registration] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
