@@ -881,12 +881,13 @@ td{
 }
 
 #htext p{
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     /*font-weight: 600;*/
     color: #30593b;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .bankimg{
@@ -914,6 +915,8 @@ td{
     font-weight: 400;
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
+    font-size: 0.8rem;
+    text-align: right;
 }
 .gr{
     background-color: #6c9577;
