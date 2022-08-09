@@ -10,16 +10,17 @@
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* IMPORTANT FOR MOBILE VISUALIZATION */
 @-o-viewport{
-    zoom: 1.0;
+    zoom: 0.5;
     width: extend-to-zoom;
 }
 @viewport{
-    zoom: 1.0;
+    zoom: 0.5;
     width: extend-to-zoom;
 }
 @-ms-viewport{
+    zoom: 0.5;
     width: extend-to-zoom;
-    zoom: 1.0
+   
 }
 /* END IMPORTANT FOR MOBILE VISUALIZATION */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -33,7 +34,7 @@
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family:/* 'Brittany Signature',/* sans-serif;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -41,7 +42,7 @@
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* WHOLE WEBSITE STRUCTURE */
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courgette&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('http://fonts.cdnfonts.com/css/brittany-signature');
+@import url('http://fonts.cdnfonts.com/css/brittany-signature?styles=70169');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -95,7 +96,7 @@ button::after{text-decoration: none;}
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -104,7 +105,6 @@ button::after{text-decoration: none;}
 /* CAROUSEL1 [#carousel1] */
 #carousel1{
     background-color: #000116;
-    
     height: 90vh;
     display: -ms-grid;
     display: grid;
@@ -126,7 +126,7 @@ button::after{text-decoration: none;}
 .slider2 .slide2{
     /*Each Image Area Division*/
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     -webkit-clip-path: circle(0% at 100% 50%);
             clip-path: circle(0% at 100% 50%);
@@ -183,7 +183,7 @@ button::after{text-decoration: none;}
 .slider2 .slide2 img{
     /*Normal Image Configuration*/
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     -o-object-fit: cover;
        object-fit: cover;
@@ -198,7 +198,7 @@ button::after{text-decoration: none;}
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
+    width: 288px;
     border-radius: 1rem;
     margin-top: 35vh;
     /*border: 3px solid #D3AC79;*/
@@ -228,7 +228,7 @@ button::after{text-decoration: none;}
 
 .slider2 .table_head{
     /*border: 2px solid chartreuse;*/
-    width: 350px;
+    width: 288px;
 }
 
 .r_border{
@@ -248,7 +248,7 @@ button::after{text-decoration: none;}
 }
 .inv_h{
     font-size: 2rem;
-    font-family: 'Brittany Signature', sans-serif;
+    font-family: 'Great Vibes', cursive;
     color: white;
     padding-top: 1rem;
 }
@@ -340,7 +340,7 @@ button::after{text-decoration: none;}
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -400,6 +400,7 @@ button::after{text-decoration: none;}
     width: 200px;
     margin-top: 1rem;
     color: #7c7c7c;
+    font-family: 'Libre Baskerville', serif;
 }
 #timers{
     display: -webkit-box;
@@ -441,7 +442,7 @@ button::after{text-decoration: none;}
             justify-content: center;
 }
 #ready h1{
-    font-family: 'Brittany Signature', sans-serif;
+    font-family: 'Great Vibes', cursive;
     text-align: center;
     font-size: 2.3rem;
     color: #7c7c7c;
@@ -459,7 +460,7 @@ button::after{text-decoration: none;}
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -517,10 +518,12 @@ button::after{text-decoration: none;}
 
 #novio{
     color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 #novio h1{
     font-family: 'Libre Baskerville', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 #phrase p{
@@ -532,15 +535,17 @@ button::after{text-decoration: none;}
 
 #novia{
     color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 #novia h1{
     font-family: 'Libre Baskerville', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 .cdiv h3{
     color: white;
-    font-family: 'Brittany Signature', sans-serif;
+    font-family: 'Great Vibes', cursive;
     font-size: 1.2rem;
 }
 /* END DATOS DE PAREJA [#couple] */
@@ -555,7 +560,7 @@ button::after{text-decoration: none;}
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -625,11 +630,13 @@ button::after{text-decoration: none;}
     color: #30593b;
     font-weight: 600;
     text-align: center;
+    width: 100%;
+    text-align: left;
 }
 .places_p2{
     font-family: 'Libre Baskerville', serif;
     color: #30593b;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 800;
     text-align: center;
 }
@@ -677,7 +684,7 @@ button::after{text-decoration: none;}
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -691,7 +698,7 @@ td{
     padding: 0.5rem;
 }
 #itinerary{
-    background-image: url("images/leaves4.jpg");
+    background-image: url("images/leaves.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -722,9 +729,10 @@ td{
     text-align: center;
 }
 #fhead p{
-    width: 250px;
+    width: 230px;
     color: white;
     text-align: center;
+    font-family: 'Libre Baskerville', serif;
 }
 .fdiv{
     padding: 2rem;
@@ -757,7 +765,7 @@ td{
     height: 4rem;
 }
 .fimage{
-    width: 300px;
+    width: 230px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -792,9 +800,9 @@ td{
     font-weight: lighter;
 }
 .subplace{
-    font-family: 'Brittany Signature', sans-serif;
+    font-family: 'Great Vibes', cursive;
     font-size: 1.2rem;
-    color: white;
+    color: #D3AC79;
     font-weight: lighter;
 }
 #fclothing h3{
@@ -810,6 +818,7 @@ td{
     padding-right: 1.5rem;
     text-align: center;
     color: white;
+    font-family: 'Libre Baskerville', serif;
     /*font-weight: lighter;*/
 }
 /* END ITINERARIO [#itinerary] */
@@ -824,7 +833,7 @@ td{
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -843,7 +852,10 @@ td{
         -ms-flex-align: center;
             align-items: center;
     /*background-color: #000116;*/
-    background-color: #D3AC79;
+    background-image: url("images/leaves4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .slider{
     /*Actual Carousel Area*/
@@ -962,7 +974,7 @@ td{
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -971,6 +983,7 @@ td{
 /* DATOS BANCARIOS [#bank] */
 #bank{
     /*background-color: #044181;*/
+    width: 1fr;
     background-image: url("images/leaves.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1018,18 +1031,19 @@ td{
     height: 10rem;
 }
 .nam_green{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-family: 'Libre Baskerville', serif;
     color: #30593b;
 }
 
 #htext p{
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     /*font-weight: 600;*/
     color: #30593b;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .bankimg{
@@ -1038,6 +1052,7 @@ td{
 .htable{
     margin-left: auto;
     margin-right: auto;
+    width: 95%;
 }
 /*
 .top_border{
@@ -1051,12 +1066,15 @@ td{
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     color: white;
+    width: 110px;
 }
 .dat{
     color: white;
     font-weight: 400;
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
+    font-size: 0.8rem;
+    text-align: right;
 }
 .gr{
     background-color: #6c9577;
@@ -1073,7 +1091,7 @@ td{
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1092,37 +1110,36 @@ td{
     padding-right: 3rem;
 }
 #registration_inner{
+    background-color: #2d553b;
     display: -ms-grid;
     display: grid;
     grid-gap: 0.5rem;
+    -ms-grid-rows: auto 0.5rem auto;
         grid-template-areas:
     "icontact_planeadora ihead icontact_novios"
     "iguala iguala iguala";
-    background-color: #2d553b;
+    -ms-grid-columns: 1fr 0.5rem 1fr 0.5rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #ihead{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: ihead; z-index: 2;}
 #icontact_planeadora{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: icontact_planeadora;}
 #icontact_novios{-ms-grid-row: 1;-ms-grid-column: 5;grid-area: icontact_novios;}
 #iguala{-ms-grid-row: 3;-ms-grid-column: 1;-ms-grid-column-span: 5;grid-area: iguala;}
 
-
 #ihead h1{
     font-family: 'Libre Baskerville', serif;
     color: white;
+    font-size: 1.5rem;
 }
 #ihead p{
-    /*font-family: 'Libre Baskerville', serif;*/
+    font-family: 'Libre Baskerville', serif;
     color: white;
-    width: 280px;
+    width: 250px;
 }
-
 .idiv{
     padding: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    /*background-color: rgba(256, 256, 256, 0.2);*/
-    /*backdrop-filter: blur(70px);*/
-    /*-webkit-backdrop-filter: blur(70px);*/
     border-radius: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1140,24 +1157,21 @@ td{
     text-align: center;
 }
 .idiv h3{
-    /*font-size: 1.5rem;*/
+    font-size: 1rem;
     font-family: 'Libre Baskerville', serif;
     color: white;
     text-transform: uppercase;
-
 }
-#customAddToCalendar {
-    /*background-color: #00C5FF;*/
-    background-color: white;
+#customAddToCalendar{
+    background-color: #D3AC79;
     font-size: 1rem;
     padding: 0.5rem 2rem;
     color: #2d553b;
-    text-shadow: 0px 0px 10px #D3AC79;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     border: none;
-    border-radius: 2rem;
-  }
+    border-radius: 1rem;
+}
 .fa{
     padding: 1rem;
     width: 2rem;
@@ -1167,24 +1181,24 @@ td{
     color: white;
     border-radius: 2rem;
     font-size: 2rem;
-    text-decoration: none;
 }
-.fa-whatsapp {
-    background: #13990a;
+.fa-whatsapp{
+    background-color: #13990a;
 }
 #s1, #s2{
     font-size: 2rem;
 }
-
-
 .p2c{
     color: white;
-    padding: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    width: 250px;
 }
 .subplace_2{
     font-size: 0.75rem;
-    color: white;
+    color: #D3AC79;
     text-align: justify;
+    font-family: 'Libre Baskerville', serif;
+    padding-right: 2rem;
 }
 /* END CONFIRMACION DE ASISTENCIA [#registration] */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1198,7 +1212,7 @@ td{
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1273,7 +1287,7 @@ td{
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /*font-family: 'Albert Sans', sans-serif;*/
@@ -1282,7 +1296,7 @@ td{
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
 /*font-family: 'Libre Baskerville', serif;*/
-/*font-family: 'Brittany Signature', sans-serif;*/
+/*font-family: 'Great Vibes', cursive;*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1323,14 +1337,17 @@ td{
     .slider2{
         /*Actual Carousel Area*/
         height: 80vh;
+        width: 100%;
     }
     .slider2 .slide2{
         /*Each Image Area Division*/
         height: 80vh;
+        width: 100%;
     }
     .slider2 .slide2 img{
         /*Normal Image Configuration*/
         height: 80vh;
+        width: 100%;
     }
     /* Text Over Images */
     .slider2 .slide2 .info2{
@@ -1344,6 +1361,7 @@ td{
     .navigation2{
         /*Arrow Button Area*/
         height: 80vh; /*Same as Slider Height in order to center them Vertically*/
+        width: 100%;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1440,6 +1458,9 @@ td{
         display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
+        -ms-grid-columns: 1fr 0.5rem 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto 0.5rem auto 0.5rem auto;
             grid-template-areas:
         "ihead ihead"
         "icontact_planeadora icontact_novios"
@@ -1747,18 +1768,22 @@ td{
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #carousel1{
         height: 90vh;
+        width: 100%;
     }
     .slider2{
         /*Actual Carousel Area*/
         height: 90vh;
+        width: 100%;
     }
     .slider2 .slide2{
         /*Each Image Area Division*/
         height: 90vh;
+        width: 100%;
     }
     .slider2 .slide2 img{
         /*Normal Image Configuration*/
         height: 90vh;
+        width: 100%;
     }
     /* Text Over Images */
     .slider2 .slide2 .info2{
@@ -1795,14 +1820,20 @@ td{
         padding-bottom: 0rem;
     }
     #couple_inner{
-        grid-gap: 0.5rem;
+        grid-gap: 3rem;
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        -ms-grid-rows: auto 0.5rem auto 0.5rem auto;
+        -ms-grid-rows: auto 3rem auto 3rem auto;
             grid-template-areas:
         "novia"
         "phrase"
         "novio";
+    }
+    #novia{
+        padding-top: 4rem;
+    }
+    #novio{
+        padding-bottom: 4rem;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #places{
