@@ -624,6 +624,7 @@ td{
     width: 250px;
     color: white;
     text-align: center;
+    font-family: 'Libre Baskerville', serif;
 }
 .fdiv{
     padding: 2rem;
@@ -647,7 +648,7 @@ td{
     height: 4rem;
 }
 .fimage{
-    width: 300px;
+    width: 250px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -684,7 +685,7 @@ td{
 .subplace{
     font-family: 'Great Vibes', cursive;
     font-size: 1.2rem;
-    color: white;
+    color: #D3AC79;
     font-weight: lighter;
 }
 #fclothing h3{
@@ -700,6 +701,7 @@ td{
     padding-right: 1.5rem;
     text-align: center;
     color: white;
+    font-family: 'Libre Baskerville', serif;
     /*font-weight: lighter;*/
 }
 /* END ITINERARIO [#itinerary] */
