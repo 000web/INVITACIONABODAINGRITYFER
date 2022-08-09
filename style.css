@@ -403,8 +403,8 @@ button::after{text-decoration: none;}
     /* ⚙⚙⚙ */
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 #couple_inner{
     display: grid;
@@ -1368,12 +1368,18 @@ td{
         padding-bottom: 0rem;
     }
     #couple_inner{
-        grid-gap: 0.5rem;
+        grid-gap: 3rem;
         grid-template-columns: 1fr;
         grid-template-areas:
         "novia"
         "phrase"
         "novio";
+    }
+    #novia{
+        padding-top: 4rem;
+    }
+    #novio{
+        padding-bottom: 4rem;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #places{
