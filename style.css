@@ -838,6 +838,7 @@ td{
 /* DATOS BANCARIOS [#bank] */
 #bank{
     /*background-color: #044181;*/
+    width: 1fr;
     background-image: url("images/leaves.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -875,7 +876,7 @@ td{
     height: 10rem;
 }
 .nam_green{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-family: 'Libre Baskerville', serif;
     color: #30593b;
 }
@@ -896,6 +897,7 @@ td{
 .htable{
     margin-left: auto;
     margin-right: auto;
+    width: 95%;
 }
 /*
 .top_border{
@@ -909,6 +911,8 @@ td{
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     color: white;
+    border: 2px solid crimson;
+    width: 110px;
 }
 .dat{
     color: white;
@@ -972,7 +976,7 @@ td{
 #ihead p{
     /*font-family: 'Libre Baskerville', serif;*/
     color: white;
-    width: 280px;
+    width: 2580px;
 }
 
 .idiv{
