@@ -433,6 +433,8 @@ button::after{text-decoration: none;}
 
 #novio{
     color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 #novio h1{
     font-family: 'Libre Baskerville', serif;
@@ -448,6 +450,8 @@ button::after{text-decoration: none;}
 
 #novia{
     color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 #novia h1{
     font-family: 'Libre Baskerville', serif;
